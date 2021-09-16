@@ -118,11 +118,30 @@ p{
     height: 100vh;
     width: 100%;
     background-image: url(../images/bg-second-mask-07.jpg);
+    background-repeat: repeat-y;
+    background-color: #011c39;
 }
 .second-section .wrap{
     width: 100%;
     height: 100vh;
     position: relative;
+}
+.second-section .content-center{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.second-section .content-right{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.second-section .stats{
+    position: absolute;
+    left: 16%;
+    bottom: 3%;
 }
 @media screen and (max-width: 414px) {
     p {
