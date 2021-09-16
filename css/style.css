@@ -2,8 +2,8 @@
     transition: all .3s;
 }
 @font-face{
-    font-family: "Roboto Light";
-    src: url(Roboto-Light.ttf) format("truetype");
+    font-family: "Cirka-Bold";
+    src: url(Cirka-Bold.ttf) format("truetype");
 }
 @font-face{
     font-family: "TitilliumWeb Regular";
