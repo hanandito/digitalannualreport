@@ -1,0 +1,1805 @@
+*{
+    transition: all .3s;
+}
+@font-face{
+    font-family: "Roboto Light";
+    src: url(Roboto-Light.ttf) format("truetype");
+}
+@font-face{
+    font-family: "TitilliumWeb Regular";
+    src: url(TitilliumWeb-Regular.ttf) format("truetype");
+}
+@font-face{
+    font-family: "TitilliumWeb Italic Regular";
+    src: url(TitilliumWeb-ExtraLightItalic.ttf) format("truetype");
+}
+.bg-home-top{
+    background-image: url(../images/home-top-background-08.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+}
+.navbar{								
+    position: absolute;
+}
+.navbar-ansaf{
+    position: absolute;
+    top: 20px;
+    padding-top: 10px;
+    z-index: 4;
+}
+.navbar-ansaf > .row > .menu-wrap > ul{
+    text-align: right;
+}
+.navbar-ansaf > .row > .menu-wrap > ul > li, .navbar-ansaf > .row > .lang-ansaf > ul > li{
+    display: inline;
+    position: relative;
+    margin: 0 15px;
+    padding-bottom: 20px;
+}
+.navbar-ansaf > .row > .lang-ansaf > ul{
+    padding-left: 25px;
+}
+.navbar-ansaf > .row > .menu-wrap > ul > li > ul{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: -63px;
+    top: 35px;
+    text-align: left;
+    list-style-type: none;
+    width: 180px;
+    height: auto;
+    background-color: #fff;
+    padding: 13px 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+}
+.navbar-ansaf > .row > .menu-wrap > ul > li:hover ul{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+} 
+.navbar-ansaf.home > .row > .menu-wrap > ul > li > a, .navbar-ansaf.home > .row > .lang-ansaf > ul > li > a{
+    color: #fff;
+}
+.navbar-ansaf.home > .row > .menu-wrap > ul > li > ul > li > a, .navbar-ansaf > .row > .menu-wrap > ul > li > ul > li > a{
+    font-size: 13px;
+}
+.navbar-ansaf ul li a{
+    color: #666666;
+    font-family: "Roboto Light";
+}
+.navbar-ansaf .logo{
+    width: 130px;
+}
+.navbar-ansaf .lang-ansaf .divider{
+    width: 1px;
+    height: 24px;
+    background-color: #666;
+    position: absolute;
+    top: 0;
+}
+.navbar-ansaf.home .lang-ansaf .divider{
+    background-color: #fff;
+}
+body{
+    transition: all .3s;
+}
+.preloader {
+    transition: all .3s;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background: url("../images/preloader.gif") center no-repeat #fbfbfb;
+}
+*{
+    transition: all .3s;
+}
+.w-80{
+    width: 80%;
+}
+.w-85{
+    width: 85%;
+}
+@font-face{
+    font-family: "Roboto Light";
+    src: url(Roboto-Light.ttf) format("truetype");
+}
+@font-face{
+    font-family: "TitilliumWeb Regular";
+    src: url(TitilliumWeb-Regular.ttf) format("truetype");
+}
+@font-face{
+    font-family: "TitilliumWeb Italic Regular";
+    src: url(TitilliumWeb-ExtraLightItalic.ttf) format("truetype");
+}
+@font-face{
+    font-family: "TitilliumWeb Bold";
+    src: url(TitilliumWeb-Bold.ttf) format("truetype");
+}
+h1, h2, h3, h4, h5, h6, p, a {font-family: "TitilliumWeb Regular"; letter-spacing: 0.3px;}
+p{
+    line-height: 26px;
+}
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.2;
+}
+p{
+    font-size: 0.9rem;
+}
+.font-titillium-reg{
+    font-family: "TitilliumWeb Regular";
+}
+.font-titillium-italic{
+    font-family: "TitilliumWeb Italic Regular";
+}
+.font-titillium-bold{
+    font-family: "TitilliumWeb Bold";
+}
+.font-roboto{
+    font-family: "Roboto Light";
+}
+.font-50{
+    font-size: 50px;
+}
+.font-75{
+    font-size: 75px;
+}
+.font-100{
+    font-size: 100px;
+}
+.font-80{
+    font-size: 80px;
+}
+.text-orange{
+    color: #ed6f30;
+}
+.text-dark-blue{
+    color: #0e212d;
+}
+.text-blue{
+    color: #435e79;
+}
+.bg-light-gray{
+    background: #efefef;
+}
+.bg-dark-blue{
+    background: #0e212d;
+}
+a:hover{
+    text-decoration: none;
+}
+.text-gray{
+    color: #666666;
+}
+/* Components */
+/* Button and Links */
+.link-white-border{
+    border: 2px solid #fff;
+    padding: 7px 18px;
+    color: #fff;
+}
+.link-white-border:hover{
+    color: #fff;
+}
+.link-orange-border{
+    border: 2px solid #ed6f30;
+    padding: 5px 15px;
+}
+.link-gray-border{
+    border: 2px solid #666666;
+    padding: 5px 15px;
+    color: #666666;
+}
+.link-gray-border:hover{
+    color: #666666;
+}
+.link-blue-border{
+    color: #0e212d;
+    border: 2px solid #0e212d;
+}
+/* Pages */
+.home-about{
+    padding-top: 10rem;
+    height: 46.6rem;
+}
+.carousel-homebanner .home-caption .wrapper{
+    position: absolute;
+    bottom: 34%;
+}
+.carousel-homebanner .owl-nav{
+    position: absolute;
+    left: 28.2vw;
+    top: 50.3vh;
+    z-index: 9;
+    transform: translate(-50%);
+}
+.carousel-homebanner .slide-number{
+    position: absolute;
+    right: 5vw;
+    bottom: 5vw;
+    font-style: italic;
+}
+.bg-home-top .ornaments-blue{
+    position: absolute;
+    right: 0;
+    top: 46%;
+    width: 10.9vw;
+}
+.home-about .tractors{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    transition: none;
+}
+.home-about .guy{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 510px;
+    transition: none;
+}
+.home-about .details{
+    width: 520px;
+    margin: auto;
+}
+.home-mid-content .image-thumbnail{
+    overflow: hidden;
+}
+.home-mid-content .image-thumbnail .shadow, .bg-mid-value .shadow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.home-mid-content .bg-mid-value{
+    background-image: url(../images/home-mid-background-08-08.jpg);
+    background-size: cover;
+    height: 64.2rem;
+    padding-top: 7rem;
+    background-position: bottom;
+    position: relative;
+    padding-bottom: 57rem;
+}
+.home-mid-content .thumbnail .title{
+		position: absolute;
+		bottom: 15px;
+		left: 25px;
+}
+.home-mid-content .carousel-ourbusiness .owl-nav .owl-prev, .home-mid-content .carousel-ourbusiness .owl-nav .owl-next, .carousel-gallery .owl-nav .owl-next, .carousel-gallery .owl-nav .owl-prev,  .carousel-homebanner .owl-nav .owl-prev,  .carousel-homebanner .owl-nav .owl-next,  .carousel-mobile-projects-list .owl-nav .owl-next, .carousel-mobile-projects-list .owl-nav .owl-prev{
+		margin: 0;
+}
+.home-mid-content .carousel-ourbusiness .owl-nav{
+	position: absolute;
+	left: -28.8%;
+	bottom: 0;
+}
+.home-mid-content .white-shadow-right{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.bg-mid-value .title-thumbnail{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.home-mid-content .bg-mid-value .cloud{
+    position: absolute;
+    left: 72px;
+    top: 370px;
+    transition: none;
+}
+.home-mid-content .bg-mid-value .tractors{
+    position: absolute;
+    bottom: 7vh;
+    width: 40vw;
+    left: -5vw;
+    transition: none;
+}
+.bottom-content .news-section .img-content{
+	width: 100%;
+}
+.bottom-content .news-section .content-wrapper{
+	background-image: url(../images/content-highlight-wrapper.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 680px;
+	height: 428px;
+	padding-left: 6.2rem;
+	padding-top: 6.4rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.bottom-content .ornament-blue{
+    position: absolute;
+    left: 0;
+    top: -57%;
+    width: 10.9vw;
+}
+.footer-content{
+	background-image: url(../images/footer-home-background-12.jpg);
+	background-size: cover;
+	padding-top: 11rem;
+    padding-bottom: 35rem;
+    background-position: center;
+}
+.footer-content-home{
+	background-image: url(../images/footer-home-background-12.jpg);
+	background-size: cover;
+	padding-top: 11rem;
+    padding-bottom: 31rem;
+    background-position: center;
+
+}
+.footer-content-home .number-counter::after {
+    content: '+';
+}
+.about-top{
+    background-image: url(../images/about-top-header-04.jpg);
+    padding-top: 10.1rem;
+    padding-bottom: 1.4rem;
+    background-size: 100%;
+}
+.about-top .elements{
+    position: absolute;
+    top: 215px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+    z-index: 2;
+}
+.about-mid .content-mid, .vision-mid .content-mid{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
+}
+.about-mid .content-wrapper{
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+.about-mid .second-section{
+    background-image: url(../images/about-mid-second-section-04.jpg);
+    padding-top: 34vh;
+    padding-bottom: 87vh;
+    background-size: cover;
+    background-position: bottom;
+}
+.about-mid .guy{
+    position: absolute;
+    bottom: 7vh;
+    right: 10vw;
+    width: 139px;
+    transition: none;
+}
+.about-mid .brief-about{
+    width: 420px;
+}
+.footer-content .number-counter{
+    font-size: 80px;
+}
+.footer-details .logo{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+.footer-details .fax-column{
+    border-left: 1px solid #bcbcbc;
+    border-right: 1px solid #bcbcbc;
+}
+.about-mid .second-section .owl-nav .owl-prev, .about-mid .second-section .owl-nav .owl-next{
+    margin: 0;
+}
+.about-mid .second-section .owl-nav{
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+.about-bottom-content{
+    background-image: url(../images/bottom-about-bottom-content-05.jpg);
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    text-align: right;
+}
+.vision-top{
+    background-image: url(../images/vision-top-header-02.jpg);
+    padding-top: 10.5rem;
+    padding-bottom: 8.5rem;
+    background-size: 100%;
+}
+.vision-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+    z-index: 2;
+}
+.vision-mid{
+    background-image: url(../images/vision-mid-second-section-04-02.jpg);
+    background-size: cover;
+    padding-bottom: 29.6rem;
+    position: relative;
+    background-position: bottom;
+}
+.vision-mid .content-wrapper{
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    padding-left: 3rem;
+}
+.vision-mid .img-icon{
+    width: 23%;
+}
+.vision-mid .second-section{
+    margin-top: 5rem;
+}
+.vision-mid .second-section h3{
+    text-align: center;
+}
+.vision-mid .two-guy{
+    position: absolute;
+    bottom: 3%;
+    right: 7%;
+    width: 16vw;
+    transition: none;
+}
+.bod-top{
+    background-image: url(../images/bod-top-header-03.jpg);
+    padding-top: 10.4rem;
+    padding-bottom: 8.5rem;
+    background-size: 100%;
+}
+.bod-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+}
+.bod-mid .first-section{
+    padding-top: 39vh;
+    background-image: url(../images/bod-mid-second-section-03.jpg);
+    background-size: cover;
+}
+.bod-mid .first-section .portraits{
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bod-mid .first-section .portraits-wrapper{
+    margin-bottom: -245px;
+}
+.bod-mid .second-section{
+    background-image: url(../images/bod-second-section-03.jpg);
+    padding-top: 20rem;
+    background-size: cover;
+    padding-bottom: 23.7rem;
+    background-position: bottom;
+}
+.bod-bottom-content .ornament-blue{
+    position: absolute;
+    left: 0;
+    top: -94%;
+    width: 10.9vw;
+}
+.bod-bottom-content .details-wrapper{
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    text-align: right;
+}
+.busl-top a, .busd-top a, .buss-top a, .busm-top a,.prevp-top a{
+    color: #666666;
+}
+.bus-top{
+    background-image: url(../images/businesses-top-header-02.jpg);
+    padding-top: 10.4rem;
+    padding-bottom: 10.3rem;
+    background-size: 100%;
+}
+.bus-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+    z-index: 2;
+}
+.bus-white{
+    background-color: #fff;
+    padding-top: 10.3rem;
+    padding-bottom: 4.2rem;
+    background-size: 100%;
+}
+.bus-white .elements{
+    position: absolute;
+    top: -21.1px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 7vw;
+    z-index: 2;
+}
+.bus-mid .first-section{
+    background-image: url(../images/bus-mid-first-section-02.jpg);
+    background-size: cover;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    text-align: center;
+}
+.bus-mid .first-section .brief{
+    width: 773px;
+    margin: auto;
+}
+.thumbnail-bus .item{
+    padding: 6rem;
+}
+.thumbnail-bus .details{
+    width: 85%;
+}
+.bus-mid .bus-client{
+    padding: 10rem 0;
+}
+.busd-top{
+    background-image: url(../images/businesses-mining-top-header-02.jpg);
+    padding-top: 10.4rem;
+    padding-bottom: 3.3rem;
+    background-size: 100%;
+}
+.busd-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+    z-index: 2;
+}
+.busd-mid .first-section{
+    background-image: url(../images/businesses-mining-mid-02.jpg);
+    background-size: cover;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    background-position: bottom;
+}
+.busd-mid .guy-content{
+    position: absolute;
+    width: 27.9vw;
+    bottom: 0;
+    transition: none;
+}
+.buss-top{
+    background-image: url(../images/businesses-services-header-02.jpg);
+    padding-top: 10.4rem;
+    padding-bottom: 3.3rem;
+    background-size: 100%;
+}
+.buss-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+    z-index: 1;
+}
+.buss-mid .first-section{
+    background-image: url(../images/businesses-services-header-03.jpg);
+    background-size: cover;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    background-position: bottom;
+}
+.buss-mid .scope-services{
+    position: absolute;
+    width: 40vw;
+    bottom: 0;
+    transition: none;
+}
+.thumbnail-bus-services{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.thumbnail-bus-services .items{
+    padding-left: 5rem;
+    padding-right: 2rem;
+}
+.thumbnail-bus-services .items .content{
+    background-image: url(../images/thum-services-content-bg-02.jpg);
+    background-size: cover;
+    padding: 5.5rem 5rem 6.5rem 2.5rem;
+    background-position: bottom right;
+}
+.busl-top{
+    background-image: url(../images/business-logistics-header-02.jpg);
+    padding-top: 10.4rem;
+    padding-bottom: 3.3rem;
+    background-size: 100%;
+}
+.busl-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+    z-index: 1;
+}
+.busl-mid .first-section{
+    background-image: url(../images/business-logistics-header-03.jpg);
+    background-size: cover;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.busl-mid .tractor-logistic{
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    width: 42vw;
+    transition: none;
+}
+.detail-logistic{
+    background-image: url(../images/businesses-logistic-second-section-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.detail-logistic .first-section{
+    padding-top: 7.9rem;
+    padding-bottom: 7.9rem;
+}
+.detail-logistic .second-section{
+    padding-bottom: 24.2rem;
+    padding-top: 5rem;
+}
+.detail-logistic .second-section .col-lg-5{
+    margin-left: 45%;
+}
+.detail-logistic .second-section .guy{
+    position: absolute;
+    left: 7%;
+    bottom: -290px;
+    transition: none;
+}
+.proj-mid{
+    background-image: url(../images/projects-background-04.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.proj-mid .first-section .details{
+    padding-top: 12rem;
+}
+.proj-mid .first-section .details .brief{
+    width: 490px;
+}
+.proj-mid .second-section{
+    padding-top: 11rem;
+    padding-bottom: 22.2rem;
+    text-align: center;
+}
+.proj-mid .second-section .brief{
+    width: 510px;
+}
+.proj-mid .second-section .content-wrapper{
+    align-items: center;
+    justify-content: center;
+}
+.proj-mid .second-section .button-link{
+    padding: .3rem 1rem;
+}
+.proj-mid .second-section .middle-button{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.proj-mid .projects-tractor{
+    position: absolute;
+    right: -173px;
+    bottom: 13vh;
+    width: 27vw;
+    transition: none;
+}
+.prevp-top{
+    background-image: url(../images/businesses-top-header-02.jpg);
+    padding-top: 10.4rem;
+    padding-bottom: 3rem;
+    background-size: 100%;
+}
+.prevp-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+}
+.prevp-mid .img-content{
+    width: 51.2vw;
+    position: relative;
+    float: right;
+}
+.prevp-mid .first-section .details{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    padding-left: 6rem;
+}
+.prevp-mid .first-section .brief {
+    width: 410px;
+}
+.list-prevp{
+    padding-top: 7.7rem;
+}
+.list-prevp .details{
+    font-size: 13px;
+}
+.csr-top{
+    background-image: url(../images/csr-header-top-bg-08.jpg);
+    padding-top: 10.5rem;
+    padding-bottom: 10.3rem;
+    background-size: 100%;
+}
+.csr-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+}
+.csr-mid .content-mid{
+    width: 50vw;
+    float: right;
+}
+.csr-mid .brief{
+    width: 400px;
+}
+.csr-mid .content-wrapper{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+.csr-tab .nav-link{
+    background-color: #f36b27;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    padding: 20px;
+}
+.csr-tab .nav-link.active, .csr-tab .nav-link:hover{
+    background-color: #112939;
+    color: #fff;
+    transition: all .3s;
+}
+.csr-tab .details{
+    padding: 5rem 8em;
+}
+.csr-tab .brief-details{
+    width: 90%;
+}
+.gallery-top{
+    background-image: url(../images/gallery-top-header-03.jpg);
+    padding-top: 10.5rem;
+    padding-bottom: 10.3rem;
+    background-size: 100%;
+}
+.gallery-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+}
+.modal-gallery{
+    max-width: 95.5%;
+}
+.modal-gallery .modal-content{
+    background: none;
+    border: none;
+}
+.modal-backdrop
+{
+    opacity: 0.85 !important;
+}
+.carousel-gallery .owl-nav{
+    position: absolute;
+    right: 0;
+    top: 85px;
+    margin-right: -48.3px;
+}
+.modal-gallery .content-wrapper{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.contact-top{
+    background-image: url(../images/contact-header-top-bg-02.jpg);
+    padding-top: 10.5rem;
+    padding-bottom: 10.3rem;
+    background-size: 100%;
+}
+.contact-top .elements{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10.9vw;
+}
+.contact-mid .content-mid{
+    width: 65vw;
+    float: right;
+}
+.contact-mid .content-wrapper{
+    padding-top: 5rem;
+}
+.input-gray{
+    background-color: #f2f2f2;
+    border-radius: 0;
+    border: none;
+}
+.form-group.left-forms{
+    margin-top: 3.3rem;
+    margin-bottom: 3.3rem;
+}
+.form-group.left-forms:last-child{
+    margin-bottom: 0;
+}
+.section-forms-ansaf{
+    padding: 7rem 3rem 10rem;
+}
+.section-forms-ansaf .button-form{
+    position: absolute;
+    bottom: 0;
+    width: 94%;
+}
+.section-forms-ansaf .button-form:hover{
+    color: #0e212d;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover{
+    background: none;
+}
+/* Button Animation */
+.carousel-homebanner .owl-nav .owl-next{
+    display:inline-block;
+    margin:0;
+}
+.carousel-homebanner .owl-nav button.owl-next::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #ed6f30;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    bottom: 2px;
+    width: 49%;
+}
+.carousel-homebanner .owl-nav .owl-next::after{
+    transform-origin: 100% 50%;
+}
+.carousel-homebanner .owl-nav .owl-next:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+.carousel-homebanner .owl-nav .owl-prev{
+    display:inline-block;
+    margin:0;
+}
+.carousel-homebanner .owl-nav button.owl-prev::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #ed6f30;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    bottom: 2px;
+    width: 49%;
+}
+.carousel-homebanner .owl-nav .owl-prev::after{
+    transform-origin: 0% 50%;
+}
+.carousel-homebanner .owl-nav .owl-prev:hover::after{
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+}
+.carousel-milestone .owl-nav .owl-next{
+    display:inline-block;
+    margin:0;
+}
+.carousel-milestone .owl-nav button.owl-next::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #ed6f30;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    bottom: 2px;
+    width: 49%;
+}
+.carousel-milestone .owl-nav .owl-next::after{
+    transform-origin: 100% 50%;
+}
+.carousel-milestone .owl-nav .owl-next:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+.carousel-milestone .owl-nav .owl-prev{
+    display:inline-block;
+    margin:0;
+}
+.carousel-milestone .owl-nav button.owl-prev::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #ed6f30;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    bottom: 2px;
+    width: 49%;
+}
+.carousel-milestone .owl-nav .owl-prev::after{
+    transform-origin: 0% 50%;
+}
+.carousel-milestone .owl-nav .owl-prev:hover::after{
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+}
+.carousel-milestone .details{
+    width: 470px;
+}
+.carousel-gallery .owl-nav .owl-next{
+    display:inline-block;
+    margin:0;
+}
+.carousel-gallery .owl-nav button.owl-next::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #ed6f30;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    bottom: 2px;
+    width: 49%;
+}
+.carousel-gallery .owl-nav .owl-next::after{
+    transform-origin: 100% 50%;
+}
+.carousel-gallery .owl-nav .owl-next:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+.carousel-gallery .owl-nav .owl-prev{
+    display:inline-block;
+    margin:0;
+}
+.carousel-gallery .owl-nav button.owl-prev::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #ed6f30;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    bottom: 2px;
+    width: 49%;
+}
+.carousel-gallery .owl-nav .owl-prev::after{
+    transform-origin: 0% 50%;
+}
+.carousel-gallery .owl-nav .owl-prev:hover::after{
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+}
+/* Carousel */
+.carousel-ourbusiness .owl-nav .owl-next{
+    display:inline-block;
+    margin:0;
+}
+.carousel-ourbusiness .owl-nav button.owl-next::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #666666;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    bottom: 0;
+    width: 49%;
+}
+.carousel-ourbusiness .owl-nav .owl-next::after{
+    transform-origin: 100% 50%;
+}
+.carousel-ourbusiness .owl-nav .owl-next:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+
+.carousel-ourbusiness .owl-nav .owl-prev{
+    display:inline-block;
+    margin:0;
+}
+.carousel-ourbusiness .owl-nav button.owl-prev::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #666666;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    position: absolute;
+    bottom: 0;
+    width: 49%;
+}
+.carousel-ourbusiness .owl-nav .owl-prev::after{
+    transform-origin: 0% 50%;
+}
+.carousel-ourbusiness .owl-nav .owl-prev:hover::after{
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+}
+/* Button */
+.link-white-border{
+    display:inline-block;
+    margin:0;
+}
+.link-white-border::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #fff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    margin-bottom: -7px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-bottom: 3px;
+}
+.link-white-border::after{
+    transform-origin: 100% 50%;
+}
+.link-white-border:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+.link-orange-border{
+    display:inline-block;
+    margin:0;
+}
+.link-orange-border::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #ed6f30;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    margin-bottom: -7px;
+    margin-left: -17px;
+    margin-right: -17px;
+    padding-bottom: 3px;
+}
+.link-orange-border::after{
+    transform-origin: 100% 50%;
+}
+.link-orange-border:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+.link-gray-border{
+    display:inline-block;
+    margin:0;
+}
+.link-gray-border::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #666666;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    margin-bottom: -7px;
+    margin-left: -17px;
+    margin-right: -17px;
+    padding-bottom: 3px;
+}
+.link-gray-border::after{
+    transform-origin: 100% 50%;
+}
+.link-gray-border:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+.section-forms-ansaf .button-form{
+    display:inline-block;
+    margin:0;
+}
+.section-forms-ansaf .button-form::after{
+    display:block;
+    content: '';
+    border-bottom: solid 4px #0e212d;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    margin-bottom: -8px;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding-bottom: 6px;
+}
+.section-forms-ansaf .button-form::after{
+    transform-origin: 100% 50%;
+}
+.section-forms-ansaf .button-form:hover::after{
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+.career-brief{
+    background-image: url(../images/career-brief-bg-02.jpg);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+@media screen and (max-width: 414px) {
+    p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    .font-75{
+        font-size: 70px;
+    }
+    h1, h2, h3, h4, h5, h6, a {
+        letter-spacing: 0.1px;
+        line-height: 1.2;
+    }
+    .bg-home-top{
+        width: 100%;
+    }
+    .bg-home-top .ornaments-blue {
+        right: 0;
+        top: 74%;
+        width: 18.9vw;
+        z-index: 2;
+    }
+    .carousel-homebanner .slide-number {
+        display: none;
+    }
+    .carousel-homebanner .wrapper{
+        position: absolute;
+        left: 15px;
+        bottom: 5rem;
+    }
+    .home-about .guy {
+        right: -120px;
+        width: 200px;
+    }
+    .home-about .tractors {
+        left: -190px;
+        width: 200px;
+    }
+    .home-about .details{
+        width: 82%;
+    }
+    .bg-home-top {
+        background-image: url(../images/home-top-background-mobile-15.jpg);
+        background-position: bottom;
+    }
+    .carousel-homebanner .owl-dots{
+        position: absolute;
+        left: 9%;
+        bottom: 4rem;
+    }
+    .footer-details .logo {
+        width: 30%;
+    }
+    .carousel-homebanner .owl-dots .owl-dot span{
+        background: none;
+        border: 2px solid #fff;
+        margin: 3px;
+    }
+    .carousel-homebanner.owl-theme .owl-dots .owl-dot.active span{
+        background: #fff;
+    }
+    .wrapper .inline-block img, .content-wrapper .inline-block img{
+        width: 30px;
+        object-fit: cover;
+        object-position: right;
+    }
+    .home-mid-content .bg-mid-value{
+        background-image: url(../images/home-our-business-mobile-bg-16.jpg);
+        height: 50rem;
+        padding-bottom: 56rem;
+        overflow: hidden;
+    }
+    .home-mid-content .bg-mid-value .cloud-mobile{
+        position: absolute;
+        right: -190px;
+        top: 0;
+        transition: none;
+    }
+    .home-mid-content .bg-mid-value .tractors{
+        bottom: 1vh;
+        left: -210px;
+        width: 70vw;
+    }
+    .news-section-mobile{
+        height: 710px;
+    }
+    .news-section-mobile .details{
+        position: absolute;
+        background-image: url(../images/news-background-detail-wrapper-15.png);
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        padding-top: 10rem;
+        bottom: 0;
+        padding-bottom: 5rem;
+    }
+    .news-section-mobile .details .content-wrapper a{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-content-home {
+        background-image: url(../images/footer-home-background-mobile-15.jpg);
+        padding-top: 6rem;
+        padding-bottom: 15rem;
+        background-position: bottom;
+    }
+    .footer-details{
+        padding: 0 35px;
+    }
+    .footer-details .logo {
+        float: left;
+    }
+    .footer-details .fax-column {
+        border: none;
+    }
+    .footer-details .link-orange-border{
+        width: 100%;
+        text-align: center;
+        padding: 15px 15px;
+    }
+    .footer-details .link-socmed a{
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+    .footer-details .fax-column .fax-details{
+        text-align: left;
+    }
+    .bottom-content .ornament-blue {
+        width: 18.9vw;
+        top: 0%;
+        transform: translateY(-50%);
+    }
+    .about-top{
+        background-image: url(../images/about-top-header-mobile-04.jpg);
+        padding-top: 29.9rem;
+        padding-bottom: 3.9rem;
+    }
+    .about-top .elements {
+        top: 247px;
+        width: 20vw;
+    }
+    .about-mid .content-wrapper {
+        padding-top: 4rem;
+        padding-bottom: 0rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .about-mid .second-section{
+        background-image: url(../images/about-mid-second-section-mobile-06-05.jpg);
+        padding-top: 14vh;
+        padding-bottom: 50vh;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    .about-mid .ornament-mobile{
+        position: absolute;
+        bottom: 5vh;
+        right: 55vw;
+        transition: none;
+    }
+    .about-mid .brief-about{
+        width: 100%;
+    }
+    .about-bottom-content {
+        background-image: url(../images/bottom-about-bottom-content-mobile-06.jpg);
+        text-align: center;
+        padding-top: 7rem;
+        padding-bottom: 18rem;
+    }
+    .footer-content {
+        background-image: url(../images/footer-background-mobile-15-05.jpg);
+        padding-top: 6rem;
+        padding-bottom: 13rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-position: bottom;
+    }
+    .footer-content a{
+        display: block;
+        margin-bottom: 30px;
+    }
+    .carousel-milestone .title-year{
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        font-size: 3.7rem;
+    }
+    .carousel-milestone .owl-dots .owl-dot span, .carousel-mission-mobile .owl-dots .owl-dot span {
+        background: none;
+        border: 2px solid #fff;
+        margin: 3px;
+    }
+    .carousel-milestone.owl-theme .owl-dots .owl-dot.active span,.carousel-mission-mobile .owl-dots .owl-dot.active span {
+        background: #fff;
+    }
+    .carousel-milestone .details{
+        width: 100%;
+    }
+    .about-mid .second-section .owl-nav{
+        position: static;
+    }
+    .about-mid .second-section .owl-nav .owl-next{
+        position: absolute;
+        right: 0;
+        top: 80px;
+    }
+    .about-mid .second-section .owl-nav .owl-prev{
+        position: absolute;
+        left: 0;
+        top: 80px;
+    }
+    .about-mid .second-section .owl-dots{
+        position: absolute;
+        top: -31px;
+        right: 0;
+    }
+    .vision-top{
+        background-image: url(../images/vision-top-header-mobile-06.jpg);
+        padding-top: 32.8rem;
+    }
+    .vision-top .elements {
+        width: 20vw;
+    }
+    .vision-mid {
+        background-image: url(../images/vision-mid-second-section-mobile-07-06.jpg);
+        padding-bottom: 13rem;
+        overflow-x: hidden;
+    }
+    .vision-mid .second-section {
+        margin-top: 10rem;
+    }
+    .vision-mid .content-wrapper {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .carousel-mission-mobile .img-icon{
+        width: 40% !important;
+        margin: auto;
+    }
+    .vision-mid .second-section h3{
+        text-align: left;
+    }
+    .vision-mid .second-section{
+        padding-left: 1rem;
+    }
+    .vision-mid .two-guy {
+        right: -140px;
+        width: 29vw;
+    }
+    .carousel-mission-mobile .owl-nav .owl-prev{
+        position: absolute;
+        left: 0;
+        top: 83px;
+    }
+    .carousel-mission-mobile .owl-nav .owl-next{
+        position: absolute;
+        right: 0;
+        top: 83px;
+    }
+    .carousel-mission-mobile .owl-dots{
+        position: absolute;
+        right: 0;
+        top: -34px;
+    }
+    .bod-top {
+        background-image: url(../images/bod-top-header-mobile-03.jpg);
+        padding-top: 32.8rem;
+    }
+    .bod-top .elements {
+        width: 20vw;
+    }
+    .bod-mid .first-section{
+        background: #0f212d;
+    }
+    .bod-mid .first-section .portraits {
+        width: 100%;
+    }
+    .bod-mid .carousel-bod{
+        margin-bottom: -220px;
+    }
+    .carousel-bod .number{
+        position: absolute;
+        right: 0;
+    }
+    .bod-mid .second-section {
+        background-image: url(../images/bod-second-section-mobile-03.jpg);
+        padding-bottom: 0;
+        padding-top: 19.9rem;
+    }
+    .bod-bottom-content .ornament-blue {
+        width: 20vw;
+        top: -55vw;
+    }
+    .bod-bottom-content .details-wrapper{
+        position: absolute;
+        top: auto;
+        right: auto;
+        text-align: left;
+        bottom: 100px;
+        left: 40px;
+    }
+    .bod-bottom-content .font-50{
+        font-size: 40px;
+        margin-bottom: -18px;
+    }
+    .bus-top {
+        background-image: url(../images/businesses-top-header-mobile-02.jpg);
+        padding-top: 32.6rem;
+    }
+    .bus-top .elements {
+        width: 20vw;
+    }
+    .bus-white {
+        background-image: url(../images/businesses-top-header-mobile-02.jpg);
+        padding-top: 32.6rem;
+    }
+    .bus-white .elements {
+        width: 20vw;
+    }
+    .bus-mid .first-section {
+        background-image: url(../images/bus-mid-first-section-mobile-03.jpg);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: left;
+    }
+    .bus-mid .first-section .brief{
+        width: 100%;
+        margin: auto;
+    }
+    .thumbnail-bus{
+        padding-top: 5rem;
+        padding-bottom: 7rem;
+    }
+    .thumbnail-bus .item {
+        padding: 2.5rem;
+    }
+    .thumbnail-bus a.link-gray-border{
+        display: block !important;
+        text-align: center;
+    }
+    .thumbnail-bus .details{
+        width: 95%;
+    }
+    .bus-mid .bus-client img{
+        width: 75%;
+    }
+    .busd-top{
+        background-image: url(../images/businesses-mining-top-header-02-04.jpg);
+        padding-top: 32.3rem;
+        padding-bottom: 9rem;
+    }
+    .busd-top .elements, .buss-top .elements, .busl-top .elements, .prevp-top .elements{
+        width: 20vw;
+        top: 217px;
+    }
+    .busd-mid .first-section, .buss-mid .first-section, .busl-mid .first-section {
+        background-image: url(../images/businesses-mining-mid-mobile-04.jpg);
+        padding-bottom: 14rem;
+    }
+    .busd-mid .guy-content, .buss-mid .scope-services {
+        width: 47.9vw;
+        left: -70px;
+    }
+    .buss-top{
+        background-image: url(../images/businesses-services-header-mobile-04.jpg);
+        padding-top: 32.3rem;
+        padding-bottom: 9rem;
+    }
+    .thumbnail-bus-services .items {
+        padding-left: 2rem;
+    }
+    .thumbnail-bus-services .items .content{
+        padding: 2.8rem 1.3rem 2.1rem 1.3rem;
+    }
+    .thumbnail-bus-services {
+        padding-top: 5rem;
+        padding-bottom: 0rem;
+    }
+    .busl-top {
+        background-image: url(../images/business-logistics-header-mobile-04.jpg) ;
+        padding-top: 32.3rem;
+        padding-bottom: 9rem;
+    }
+    .detail-logistic {
+        background-image: url(../images/businesses-logistic-second-section-mobile-04.jpg);
+    }
+    .detail-logistic .second-section .col-lg-5 {
+        margin-left: 0;
+    }
+    .detail-logistic .first-section {
+        padding-bottom: 4rem;
+    }
+    .busd-mid .first-section, .buss-mid .first-section, .busl-mid .first-section {
+        overflow: hidden;
+    }
+    .proj-mid {
+        background-image: url(../images/projects-background-mobile-02.jpg);
+    }
+    .proj-mid .details{
+        padding-left: 2rem;
+    }
+    .proj-mid .second-section{
+        text-align: left;
+        padding-top: 5rem;
+        padding-bottom: 9rem;
+    }
+    .proj-mid .projects-tractor {
+        right: -213px;
+        bottom: 3vh;
+        width: 58vw;
+    }
+    .proj-mid .second-section .content-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .proj-mid .second-section .content-wrapper{
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+    .proj-mid .second-section .button-link {
+        padding: .9rem 1rem;
+    }
+    .proj-mid .second-section .col-lg-12{
+        padding-right: 2rem;
+    }
+    .proj-mid .first-section .details {
+        padding-top: 4rem;
+    }
+    .proj-mid .first-section .details .brief{
+        width: 93%;
+    }
+    .proj-mid .second-section .brief{
+        width: 93%;
+    }
+    .prevp-top {
+        background-image: url(../images/businesses-top-header-mobile-02.jpg);
+        padding-top: 32.3rem;
+        padding-bottom: 9rem;
+    }
+    .prevp-top .elements{
+        z-index: 3;
+    }
+    .prevp-mid .img-content{
+        z-index: 0;
+        width: 100%;
+        position: relative;
+    }
+    .prevp-mid .first-section .details {
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        padding-left: 2rem;
+    }
+    .prevp-mid .first-section .details h2 {
+        margin-bottom: -20px;
+    }
+    .prevp-mid .first-section .brief {
+        width: 90%;
+    }
+    .list-prevp {
+        padding-top: 4rem;
+    }
+    .carousel-mobile-projects-list .owl-nav{
+        position: absolute;
+        bottom: 30px;
+    }
+    .prevp-top.mobile-pros{
+        padding-bottom: 6.5rem;
+    }
+    .csr-top {
+        background-image: url(../images/csr-header-top-bg-mobile-06.jpg);
+        padding-top: 32.6rem;
+    }
+    .csr-top .elements {
+        width: 20vw;
+        z-index: 2;
+    }
+    .csr-mid .content-mid {
+        width: 100%;
+        float: none;
+        position: static;
+        z-index: 0;
+    }
+    .csr-mid .brief{
+        width: 100%;
+    }
+    .csr-mid .content-wrapper{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 3.3rem;
+    }
+    .csr-tab .details {
+        padding: 0 2rem;
+    }
+    .csr-tab .tab-content img{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .csr-tab .nav-link {
+        padding: 14px 9px;
+        font-size: 0.7rem;
+    }
+    .csr-tab .brief-details{
+        width: 100%;
+    }
+    .gallery-top {
+        background-image: url(../images/gallery-top-header-mobile-03.jpg);
+        padding-top: 32.6rem;
+    }
+    .gallery-top .elements {
+        width: 20vw;
+        z-index: 2;
+    }
+    .contact-top {
+        background-image: url(../images/contact-header-top-bg-mobile-02.jpg);
+        padding-top: 32.6rem;
+    }
+    .contact-top .elements{
+        width: 20vw;
+        z-index: 2;
+    }
+    .contact-mid .content-mid{
+        width: 100%;
+        float: none;
+    }
+    .contact-mid .content-wrapper {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .section-forms-ansaf {
+        padding: 3rem 2rem;
+    }
+    .section-forms-ansaf .button-forms{
+        position: relative;
+    }
+    .form-group.left-forms {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .form-group.left-forms:last-child {
+        margin-bottom: 2rem;
+    }
+    .menu{
+        position: absolute;
+        right: 20px;
+    }
+    .navbar-ansaf .logo {
+        width: 100px;
+    }
+    .side-menu{
+        background-color: #fff;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        padding: 2rem;
+        right: -100%;
+        transition: all .5s;
+    }
+    .side-menu.active{
+        right: 0;
+    }
+    .side-menu > ul {
+        padding-top: 5rem;
+    }
+    .side-menu ul{
+        list-style: none;
+        padding-left: 15px;
+    }
+    .side-menu ul li{
+        margin: 15px 0;
+    }
+    .side-menu ul li:hover{
+        color: #90A7B7;
+    }
+    .side-menu ul ul{
+        display: none;
+    }
+    .side-menu ul li:hover ul{
+        display: block;
+    }
+    .home-mid-content .image-thumbnail .shadow, .bg-mid-value .shadow{
+        display: none;
+    }
+    .home-mid-content .thumbnail .title {
+        position: static;
+        margin: 1.5rem 0;
+    }
+    .home-mid-content .thumbnail .title h6 {
+        color: #000 !important;
+    }
+    .home-mid-content .thumbnail .title .slide-number{
+        position: absolute;
+        right: 20px;
+        bottom: 70px;
+        color: #fff !important;
+    }
+    .home-mid-content .thumbnail .title .subtitle{
+        text-align: center;
+    }
+    .bg-mid-value .title-thumbnail {
+        position: relative;
+        transform: none;
+        left: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .bg-mid-value .slide-number {
+        position: absolute;
+        right: 20px;
+        text-align: left;
+        bottom: 70px;
+        color: #fff;
+    }
+    .carousel-milestone .owl-nav button.owl-next::after{
+        width: 100%;
+    }
+    .carousel-milestone .owl-nav button.owl-prev::after{
+        width: 100%;
+    }
+    .carousel-milestone .owl-nav .owl-next:hover::after {
+        transform: none;
+        transform-origin: 0%;
+    }
+    .carousel-milestone .owl-nav .owl-prev:hover::after {
+        transform: none;
+        transform-origin: 0%;
+    }
+    .carousel-milestone .owl-nav .owl-next:active::after {
+        transform: none;
+        transform-origin: 0% 50%;
+    }
+    .carousel-milestone .owl-nav .owl-prev:active::after {
+        transform: none;
+        transform-origin: 100% 50%;
+    }
+    .detail-logistic .second-section .guy {
+        left: -65%;
+        bottom: -380px;
+        width: 21vw;
+    }
+    .csr-tab{
+        padding-bottom: 5rem;
+    }
+    .home-about a{
+        display: inline-block !important;
+        width: 90%;
+        margin: 5rem auto;
+    }
+    .section-forms-ansaf .button-form {
+        position: relative;
+        bottom: auto;
+    }
+    .link-white-border {
+        padding: 15px 18px;
+    }
+    .link-white-border::after {
+        margin-bottom: -15px;
+        padding-bottom: 13px;
+        margin-left: -18px;
+        margin-right: -18px;
+    }
+    .link-orange-border, .link-gray-border{
+        padding: 15px 15px;
+    }
+    .link-orange-border::after, .link-gray-border::after{
+        margin-bottom: -17px;
+        padding-bottom: 12px;
+    }
+}
