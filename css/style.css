@@ -187,6 +187,11 @@ p,a{
     padding: 20px 30px;
     color: #000;
 }
+.fifth-section{
+    background-image: url(../images/fifth-section-05.jpg);
+    height: 1500px;
+    background-size: cover;
+}
 @media screen and (max-width: 414px) {
     p {
         font-size: .9rem;
