@@ -180,6 +180,7 @@ p,a{
 .fourth-section .three-section .wrap-details{
     position: absolute;
     left: 20%;
+    z-index: 2;
 }
 .button-white{
     background-color: #fff;
