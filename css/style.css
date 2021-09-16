@@ -3,21 +3,25 @@
 }
 @font-face{
     font-family: "Cirka-Bold";
-    src: url(Cirka-Bold.ttf) format("truetype");
+    src: url(Cirka-Bold.otf) format("truetype");
 }
 @font-face{
-    font-family: "TitilliumWeb Regular";
-    src: url(TitilliumWeb-Regular.ttf) format("truetype");
+    font-family: "Cirka Light";
+    src: url(Cirka-Light.ttf) format("truetype");
 }
 @font-face{
-    font-family: "TitilliumWeb Italic Regular";
-    src: url(TitilliumWeb-ExtraLightItalic.ttf) format("truetype");
+    font-family: "DMSANS Bold";
+    src: url(DMSans-Bold.ttf) format("truetype");
 }
-.bg-home-top{
-    background-image: url(../images/home-top-background-08.jpg);
+@font-face{
+    font-family: "DMSANS Regular";
+    src: url(DMSans-Regular.ttf) format("truetype");
+}
+.header-top{
+    background-image: url(../images/header-top-05.jpg);
     background-size: cover;
     position: relative;
-    z-index: 3;
+    z-index: 1;
 }
 .navbar{								
     position: absolute;
