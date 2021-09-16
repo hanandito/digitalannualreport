@@ -143,6 +143,9 @@ p{
     left: 16%;
     bottom: 3%;
 }
+.third-section{
+    background-image: url(../images/third-section-08.jpg);
+}
 @media screen and (max-width: 414px) {
     p {
         font-size: .9rem;
