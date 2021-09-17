@@ -189,8 +189,31 @@ p,a{
 }
 .fifth-section{
     background-image: url(../images/fifth-section-05.jpg);
-    height: 1500px;
     background-size: cover;
+}
+.fifth-section .first-content{
+    padding-top: 150px;
+    height: 100vh;
+    position: relative;
+}
+.fifth-section .left-content, .fifth-section .right-content{
+    position: absolute;
+}
+.fifth-section .left-content{
+    top: 4%;
+}
+.fifth-section .right-content{
+    top: -4%;
+    right: 0;
+}
+.fifth-section .second-content{
+    height: 125vh;
+    position: relative;
+}
+.fifth-section .second-content .wrap-details{
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
 }
 @media screen and (max-width: 414px) {
     p {
