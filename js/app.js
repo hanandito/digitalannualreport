@@ -248,7 +248,7 @@ function fetchData() {
     .then(data => {
       console.log(data.features);
 
-      // ============ Display Loop ============
+      // ============ Display Loop Data ============
       const html = data.features.map(covid => {
         return `
         <div class='wrapDataCovidAPI'>
@@ -263,7 +263,7 @@ function fetchData() {
       console.log(html);
       document.querySelector('#targetCovidAPILoop').insertAdjacentHTML('afterbegin', html);
 
-      // ============ Display Default 1 ============
+      // ============ Display Single Data ============
       const getData = data.features[10];
       const displayData = `
         <div class='wrapDataCovidAPI'>
