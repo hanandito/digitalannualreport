@@ -190,7 +190,6 @@ $('.carousel-mobile-projects-list').addClass('owl-carousel owl-theme').owlCarous
     });
   });
  // 
-/*
  var a = 0;
 $(window).scroll(function() {
 
@@ -223,7 +222,6 @@ $(window).scroll(function() {
   }
 
 });
-*/
 
 // Go Top
 $(document).ready(function(){
