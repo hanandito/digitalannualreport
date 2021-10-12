@@ -222,3 +222,16 @@ $(window).scroll(function() {
   }
 
 });
+
+
+// Go Top
+$(document).ready(function(){
+  $(function () {
+    $('a#gotop').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 2000);
+      return false;
+    });
+  });
+});
