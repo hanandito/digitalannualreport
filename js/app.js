@@ -222,3 +222,62 @@ $(window).scroll(function() {
   }
 
 });
+
+// Go Top
+$(document).ready(function(){
+  $(function () {
+    $('a#gotop').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 2000);
+      return false;
+    });
+  });
+});
+
+
+
+function fetchData() {
+  fetch('https://services5.arcgis.com/VS6HdKS0VfIhv8Ct/arcgis/rest/services/COVID19_Indonesia_per_Provinsi/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json')
+    .then(response => {
+      if (!response.ok) {
+        throw Error('ERROR');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(data.features);
+
+      // ============ Display Loop Data ============
+      const html = data.features.map(covid => {
+        return `
+        <div class='wrapDataCovidAPI'>
+          <p class='mb-0'>Provinsi : ${covid.attributes.Provinsi}</p>
+          <p class='mb-0'>Kasus Positif : ${covid.attributes.Kasus_Posi}</p>
+          <p class='mb-0'>Kasus Sembuh : ${covid.attributes.Kasus_Semb}</p>
+          <p class='mb-0'>Kasus Meninggal : ${covid.attributes.Kasus_Meni}</p>
+        </div>
+        `;
+      })
+      .join('');
+      console.log(html);
+      document.querySelector('#targetCovidAPILoop').insertAdjacentHTML('afterbegin', html);
+
+      // ============ Display Single Data ============
+      const getData = data.features[10];
+      const displayData = `
+        <div class='wrapDataCovidAPI'>
+          <p class='mb-0'>Provinsi : ${getData.attributes.Provinsi}</p>
+          <p class='mb-0'>Kasus Positif : ${getData.attributes.Kasus_Posi}</p>
+          <p class='mb-0'>Kasus Sembuh : ${getData.attributes.Kasus_Semb}</p>
+          <p class='mb-0'>Kasus Meninggal : ${getData.attributes.Kasus_Meni}</p>
+        </div>
+      `;
+      console.log(displayData);
+      document.querySelector('#targetCovidAPISingle').insertAdjacentHTML('afterbegin', displayData);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+}
+fetchData();

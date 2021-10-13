@@ -220,3 +220,287 @@ p,a{
         font-size: .9rem;
     }
 }
+
+
+
+/* Mr. F */
+/* Sizing */
+.w-30p5{width: 30.5%;}
+.w-35{width: 35%;}
+.w-37{width: 37%;}
+.w-40{width: 40%;}
+.w-60{width: 60%;}
+.w-65{width: 65%;}
+.w-70{width: 70%;}
+.w-72{width: 72%;}
+.w-74{width: 74%;}
+.w-78{width: 78%;}
+.w-90{width: 90%;}
+.w-92{width: 92%;}
+.w-97{width: 97%;}
+.mb-10p{margin-bottom: 10%;}
+.mb-15p{margin-bottom: 15%;}
+.py-100{padding-top: 100px;padding-bottom: 100px;}
+.py-150{padding-top: 150px;padding-bottom: 150px;}
+.py-7p{padding-top: 7%;padding-bottom: 7%;}
+.px-7p{padding-left: 7%;padding-right: 7%;}
+.pt-100{padding-top: 100px;}
+.pt-150{padding-top: 150px;}
+.pb-100{padding-bottom: 100px;}
+.pb-150{padding-bottom: 150px;}
+.pl-2p{padding-left: 2%;}
+.pl-7p{padding-left: 7%;}
+.pr-7p{padding-right: 7%;}
+/* 
+List Font Size
+60pt => 80px
+40pt => 53,33333333333333px
+15pt => 20px
+13pt => 17,333333333333332px
+10pt => 13,333333333333332px    
+*/
+.text-primary{color: #29b6f6 !important;}
+.text-defgrey{color: #58595b !important;}
+.btn-defblue{
+    display: inline-block;
+    padding: 3% 5%;
+    color: #fff;
+    background: #29b6f6;
+    text-decoration: none !important;
+}
+.btn-defblue:hover{
+    color: #29b6f6;
+    background: #fff;
+}
+b{font-family: "DMSANS Bold";font-weight: unset;}
+h1 b{font-family: "Cirka Light";}
+.font-53{font-size: 53.33333333333333px;}
+.font-20{font-size: 20px;}
+.font-17{font-size: 17.333333333333332px;}
+.font-13{font-size: 13.333333333333332px;}
+/* Style */
+.fifth-section{
+    background-image: url(../images/fifth-section-05-01.jpg);
+}
+.fifth-section .second-content .wrap-details{
+    bottom: 35%;
+}
+.seventh-section .num{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 36%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-family: "DMSANS Bold";
+    font-size: 13.333333333333332px;
+    border-radius: 50%;
+    background-color: #00adee;
+}
+.seventh-section .bottle{
+    position: absolute;
+    bottom: -20%;
+    right: 1%;
+    width: 40%;
+}
+.seventh-section table tr{
+    height: 110px;
+}
+.seventh-section table tr td:first-child{
+    width: 14%;
+}
+.seventh-section table tr td:last-child{
+    padding: 0 4%;
+    width: 86%;
+}
+.seventh-section #accordionFirst,
+.seventh-section #accordionSecond{position: unset;}
+.seventh-section #accordionFirst .card,
+.seventh-section #accordionFirst .card .card-header,
+.seventh-section #accordionSecond .card .card-header{
+    position: unset;
+    background-color: transparent;
+    border: unset;
+    border-radius: 0;
+}
+.seventh-section #accordionFirst .card .card-header,
+.seventh-section #accordionSecond .card .card-header{
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #00adee;
+}
+.seventh-section #accordionFirst .card .card-header:hover{
+    background-color: #00adee;
+}
+.seventh-section #accordionFirst .card .card-header a,
+.seventh-section #accordionSecond .card .card-header a{
+    display: block;
+    position: relative;
+    padding: 25px 0;
+    width: 100%;
+    font-family: "Cirka-Bold";
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.seventh-section #accordionFirst .card .card-header .fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
+.seventh-section #accordionFirst .collapse,
+.seventh-section #accordionSecond .collapse{
+    position: absolute;
+    bottom: 14%;
+    right: 109.8%;
+    width: 28%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: unset !important;
+}
+.seventh-section #accordionFirst .collapse.show,
+.seventh-section #accordionSecond .collapse.show{
+    transition: unset !important;
+}
+.seventh-section #accordionFirst .collapsing,
+.seventh-section #accordionSecond .collapsing{
+    display: none !important;
+    transition: unset !important;
+}
+.seventh-section #accordionSecond .card{
+    display: inline-block;
+    margin: 0 40px 0 0;
+    width: 220px;
+    height: 220px;
+    background: transparent;
+    border-radius: 100%;
+    border: 2px solid #00adee;
+    cursor: pointer;
+}
+.seventh-section #accordionSecond .card:nth-child(1){
+    margin-bottom: 50px;
+}
+.seventh-section #accordionSecond .card:nth-child(2){
+    margin-bottom: 50px;
+}
+.seventh-section #accordionSecond .card:hover{
+    background-color: #fff;
+}
+.seventh-section #accordionSecond .card .card-header{
+    width: 100%;
+    height: 100%;
+    border-bottom: unset;
+}
+.seventh-section #accordionSecond .card .card-header a{
+    padding: 0;
+    height: 100%;
+    line-height: 20px;
+}
+.seventh-section #accordionSecond .card .card-header a span{
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+.seventh-section #accordionSecond .card:hover .card-header a span{
+    color: #00adee;
+}
+.seventh-section #accordionSecond .collapse{
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: unset !important;
+}
+.seventh-section #accordionSecond .collapse img{
+    height: 440px;
+    object-fit: cover;
+}
+.seventh-section #accordionSecond .collapse .line{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 2px;
+    height: 100%;
+    background: #29b6f6;
+}
+.seventh-section #accordionSecond .num{
+    padding: 15px 10px;
+    right: 70%;
+    width: 60px;
+    height: 60px;
+    font-family: "Cirka-Bold";
+    font-size: 20px;
+    line-height: 20px;
+    color: #00adee;
+    background: #fff;
+    border: 2px solid #00adee;
+}
+.eighth-section .desc{
+    position: absolute;
+    padding: 0 100px 7%;
+    bottom: 0;
+    width: 100%;
+}
+.eighth-section .desc p{
+    line-height: 25px;
+}
+.ninth-section{
+    background: url('../images/ninth-section-content-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ninth-section .desc{
+    padding-top: 6%;
+    width: 50%;
+    min-height: 100vh;
+}
+.ninth-section .line{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 94%;
+    height: 2px;
+    background-color: #29b6f6;
+}
+.ninth-section .gotop{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 80px;
+    height: 80px;
+    background-color: #29b6f6;
+}
+.ninth-section .gotop img{
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 30%;
+}
+.tenth-section .targetCovidAPI .wrapDataCovidAPI{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 23.3%;
+    color: #fff;
+    border: 2px solid #00adee;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0s;
+}
+.tenth-section .targetCovidAPI .wrapDataCovidAPI:hover{
+    color: #00adee;
+}
