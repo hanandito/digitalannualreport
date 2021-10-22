@@ -12,18 +12,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
     <title>Home | Digital Annual Report</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-1 offset-lg-1">
-                    <img src="images/logo.png" alt="Digital AR" />
+    <nav class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <a href="index.html"><img src="images/logo.png" alt="Digital AR" /></a>
+            </div>
+            <div class="col-lg-9">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="sideNav">
+                    <i class="closeSideNav fas fa-times"></i>
+                    <ul class="boxc">
+                        <li><a class="closeSideNav" href="index.html">Home</a></li>
+                        <li><a class="closeSideNav" href="#tar-introduction">Introduction</a></li>
+                        <li><a class="closeSideNav" href="#tar-main-problem">Main Problem</a></li>
+                        <li><a class="closeSideNav" href="#tar-solution">Solution</a></li>
+                        <li><a class="closeSideNav" href="#tar-further-info">Further Info</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
     <div class="container-fluid header-top">
         <div class="row">
             <div class="col-lg-12 content">
@@ -38,7 +54,10 @@
                 </div>
                 <div class="watch-now">
                     <div class="d-flex">
-                        <img src="images/header-country-09.png" alt="">
+                        <div class="wrapTarget position-relative" data-toggle="modal" data-target="#modalVideo">
+                            <img src="images/new/videos-images-01.jpg" alt="Digital AR" />
+                            <img class="icon boxc" src="images/new/icon-01.png" alt="Digital AR" />
+                        </div>
                         <div class="details ml-4">
                             <p class="text-white">
                                 Watch Now
@@ -51,444 +70,924 @@
                         </div>
                     </div>
                 </div>
-                <div class="download-button">
-                    <img src="images/download-our-pdf-button-10.png" alt="">
-                </div>
-                <div class="scroll-down">
-                    <img data-aos="fade-up" data-aos-offset="-200" src="images/scroll-down-11.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid second-section">
-        <div class="row">
-            <div class="col-lg-12 wrap">
-                <div class="title pt-lg-5">
-                    <h1 class="text-white mt-lg-5 text-center" data-aos="fade-up">
-                        Covid-19's first step in Indonesia
-                    </h1>
-                </div>
-                <div class="stats">
-                    <img src="images/angka-di-section-kedua-06.png" alt="" data-aos="fade-up">
-                </div>
-                <div class="content-center">
-                    <img src="images/object-mask-06-05.png" alt="" data-aos="fade-down">
-                </div>
-                <div class="content-right">
-                    <p class="text-white" data-aos="fade-left">
-                        2 March 2020 is where the first case of<br>
-                        Covid-19 was first found in Indonesia. It was<br>
-                        when two of our citizens get in contact with a<br>
-                        Japanese citizen domicile in Malaysia.<br>
-                        <br>    
-                        It's only going up from there until now, we have<br>
-                        at least 2 million Covid-19 cases in Indonesia.<br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid third-section pt-5">
-        <div class="row">
-            <div class="col-lg-12 pt-5 text-center">
-                <img data-aos="fade-down" class="w-100 px-5" src="images/third-section-indonesia-maps-06-06-06.png" alt="">
-            </div>
-        </div>
-        <div class="row mt-lg-5 pt-lg-5 mx-5 py-5">
-            <div class="col-lg-6 bg-navy p-lg-5" data-aos="fade-up">
-                <h1 class="text-white">
-                    Most Impacted
-                </h1>
-                <h1 class="text-primary">
-                    Economy Sectors
-                </h1>
-                <div class="wrapper-content">
-                    <p class="text-white">
-                        Contact-intensive sectors – where jobs are less amenable to telework<br>
-                        and that rely more on face-to-face interactions including with<br>
-                        customers (such as transport, hospitality, wholesale and retail trade,<br>
-                        construction, manufacturing) – <span class="text-primary">were hit particularly hard and have only</span><br>
-                        <span class="text-primary">partially recovered.</span>
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6 bg-navy pr-0" data-aos="fade-up">
-                <img class="float-right" src="images/third-section-most-impacted-07.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid fourth-section">
-        <div class="row one-section pt-5">
-            <div class="col-lg-10 offset-lg-1 pt-3 px-4">
-                <img class="img-fluid mt-4" src="images/four-section-stats-08.png" alt="" data-aos="fade-right">
-            </div>
-            <div class="col-lg-6 offset-lg-1">
-                <h1 class="text-white" data-aos="fade-up">
-                    Unemployment<br>
-                    Rate <span class="text-primary">Rose</span>
-                </h1>
-            </div>
-            <div class="col-lg-5">
-                <p class="text-white" data-aos="fade-left">
-                    The unemployment rate rose by <span class="text-primary">1.8 percentage points</span> to <span cass="text-primary">7.1 percent</span><br>
-                    and the underemployment rate increased by <span class="text-primary">3.8 percentage points</span> to<br>
-                    <span cl  ass="text-primary">10.2 percent</span> in the third quarter compared to the year before. In August,<br>
-                    between <span cl  ass="text-primary">35 and 50 percent of workers reported earning less</span> than<br>
-                    before the crisis (World Bank, 2020).
-                </p>
-            </div>
-        </div>
-        <div class="row two-section">
-            <div class="col-lg-5 offset-lg-1">
-                <img class="img-fluid" src="images/four-section-stats-second-08-09-05.png" alt="" data-aos="fade-up">
-            </div>
-            <div class="offset-lg-1 col-lg-4" data-aos="fade-right">
-                <h1 class="text-white mb-5">
-                    Falling into<br>
-                    <span class="text-primary">Public Debt</span>
-                </h1>
-                <p class="text-white mb-5">
-                    <br>
-                    Public debt is rising (Table on the left) and interest<br>
-                    payments are projected to increase to <span class="text-primary">2.4 percent</span> of GDP<br>
-                    per year on average in 2021-2022, compared to <span class="text-primary">1.7 percent</span><br>
-                    of GDP in 2019, and could increase further without reforms.
-                    <br><br><br>
-                </p>
-                <a href="#" class="button-white">
-                    Indonesia’s GDP Growth
+                <a target="_blank" class="download-button" href="lorem-ipsum.pdf">
+                    <div class="icon">
+                        <img class="boxc w-50" src="images/new/icon-02.png" alt="Digital AR" />
+                    </div>
+                    <div class="desc text-center">
+                        <p class="boxc mb-0 font-black">Download Our PDF</p>
+                    </div>
+                    <!-- <img src="images/download-our-pdf-button-10.png" alt="Digital AR" /> -->
                 </a>
+                <div class="scroll-down">
+                    <img class="d-block w-50 mx-auto mb-2" src="images/new/icon-03-02.png" alt="Digital AR" />
+                    <div class="dot animbounce"></div>
+                    <p class="text-white">Scroll Down</p>
+                </div>
             </div>
         </div>
-        <div class="row three-section">
-            <div class="col-lg-12">
-                <div class="wrap-details" data-aos="fade-right">
-                    <h1 class="text-white mb-5" >
-                        Indonesia Can<br>
-                        <span class="text-primary">Grow More, But...</span>
+    </div>
+    <!-- Modal Video -->
+    <div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <span class="boxc" data-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </span>
+                <iframe class="boxc" width="560" height="315" src="https://www.youtube.com/embed/gvBJQKhDjLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="second-third-wrap-section position-relative">
+        <div id="tar-introduction" class="tarPos"></div>
+        <div class="container-fluid second-section">
+            <div class="row">
+                <div class="col-lg-12 wrap">
+                    <div class="title pt-lg-5">
+                        <h1 class="text-white mt-lg-5 text-center" data-aos="fade-up">
+                            Covid-19's first step in Indonesia
+                        </h1>
+                    </div>
+                    <div class="stats1 boxc"><h3 class="font-80 text-white"><span id="iCFI1"></span></h3></div>
+                    <div class="stats2 boxc"><h3 class="font-80 text-white"><span id="iCFI2"></span></h3></div>
+                    <div class="stats3 boxc"><h3 class="font-80 text-white"><span id="iCFI3"></span></h3></div>
+                    <div class="stats4 boxc"><h3 class="font-80 text-white"><span id="iCFI4"></span></h3></div>
+                    <div class="content-center">
+                        <img src="images/object-mask-06-05.png" alt="Digital AR" data-aos="fade-down">
+                    </div>
+                    <div class="content-right">
+                        <p class="text-white" data-aos="fade-left">
+                            2 March 2020 is where the first case of<br>
+                            Covid-19 was first found in Indonesia. It was<br>
+                            when two of our citizens get in contact with a<br>
+                            Japanese citizen domicile in Malaysia.<br>
+                            <br>    
+                            It's only going up from there until now, we have<br>
+                            at least 2 million Covid-19 cases in Indonesia.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid third-section pt-5">
+            <div class="row">
+                <div class="col-lg-12 pt-5">
+                    <div id="iTD" class="interactive-title"></div>
+                    <div class="interactive-map d-none d-lg-block">
+                        <!-- Map Images -->
+                        <img class="img-fluid w-100" src="images/new/maps-01.png" data-src="images/feature/maps-03.png" alt="Digital AR" />
+                        <!-- Default Point 1 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:25%; right:89.7%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD1"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 2 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:37.2%; right:80%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD2"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 3 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:45.5%; right:82.3%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD3"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 4 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:51%; right:77%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD4"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 5 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:66.5%; right:72.3%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD5"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 6 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:65.8%; right:71.3%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD6"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 7 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:70.3%; right:70.4%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD7"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 8 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:69.5%; right:65.8%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD8"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 9 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:69.7%; right:64.4%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD9"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 10 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:70.5%; right:61.9%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD10"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 11 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:73.8%; right:54.8%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD11"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 12 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:74.8%; right:50.2%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD12"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 13 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:74%; right:43.3%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD13"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 14 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:78.8%; right:46%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD14"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 15 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:79.5%; right:37%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD15"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 16 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:39.8%; right:62.8%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD16"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 17 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:51%; right:58.4%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD17"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 18 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:53.8%; right:54.9%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD18"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 19 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:38.8%; right:53%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD19"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 20 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:24.8%; right:52.2%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD20"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 21 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:38%; right:39.2%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD21"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 22 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:47.8%; right:45.4%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD22"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 23 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:55%; right:46%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD23"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 24 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:54%; right:41.6%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD24"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 25 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:53%; right:33.6%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD25"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 26 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:53.6%; right:26.6%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD26"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 27 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:36.8%; right:29.3%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD27"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 28 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:58.5%; right:14.4%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD28"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 29 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:51.8%; right:11%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD29"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- Default Point 30 -->
+                        <div class="map-point catDP">
+                            <span class="tooltip tooltip-effect-4" style="top:43.5%; right:20.8%;">
+                                <span class="tooltip-item">
+                                    <div class="shapeCircle"></div>
+                                    <div class="catLine"></div>
+                                    <span class="tooltip-content clearfix">
+                                        <span class="tooltip-text">
+                                            <div id="iMD30"></div>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-lg-5 pb-lg-5">
+                <div class="col-lg-6 bg-navy p-lg-5" data-aos="fade-up">
+                    <h1 class="text-white">
+                        Most Impacted
                     </h1>
-                    <p class="text-white">
-                        Indonesia can recover from its recession with a slow and<br>
-                        steady progress, but with the amount of COVID-19 Cases<br>
-                        rising up again, this might be the problem to Indonesia’s<br>
-                        Economic Recovery.
+                    <h1 class="text-primary">
+                        Economy Sectors
+                    </h1>
+                    <div class="wrapper-content">
+                        <p class="text-white">
+                            Contact-intensive sectors – where jobs are less amenable to telework<br>
+                            and that rely more on face-to-face interactions including with<br>
+                            customers (such as transport, hospitality, wholesale and retail trade,<br>
+                            construction, manufacturing) – <span class="text-primary">were hit particularly hard and have only</span><br>
+                            <span class="text-primary">partially recovered.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-navy pr-0" data-aos="fade-up">
+                    <img class="float-right" src="images/third-section-most-impacted-07.jpg" alt="Digital AR" />
+                </div>
+            </div>
+        </div>
+        <div class="comWrap">
+            <div class="comCategory bg-lightblue">
+                <p class="font-13 text-white mb-0">INTRODUCTION</p>
+            </div>
+        </div>
+    </div>
+    <div class="fourth-fifth-sixth-wrap-section position-relative">
+        <div id="tar-main-problem" class="tarPos"></div>
+        <div class="container-fluid fourth-section">
+            <div class="row one-section pt-5">
+                <div class="col-lg-10 offset-lg-1 pt-3 px-4">
+                    <!-- Chart Unemployment Rate -->
+                    <div class="wrapChartUR" data-aos="fade-right">
+                        <canvas id="chartUR" style="max-height: 50vh;"></canvas>
+                    </div>
+                    <!-- <img class="img-fluid mt-4" src="images/four-section-stats-08.png" alt="Digital AR" data-aos="fade-right"> -->
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <h1 class="text-white" data-aos="fade-up">
+                        Unemployment<br>
+                        Rate <span class="text-primary">Rose</span>
+                    </h1>
+                </div>
+                <div class="col-lg-5">
+                    <p class="text-white" data-aos="fade-left">
+                        The unemployment rate rose by <span class="text-primary">1.8 percentage points</span> to <span cass="text-primary">7.1 percent</span><br>
+                        and the underemployment rate increased by <span class="text-primary">3.8 percentage points</span> to<br>
+                        <span cl  ass="text-primary">10.2 percent</span> in the third quarter compared to the year before. In August,<br>
+                        between <span cl  ass="text-primary">35 and 50 percent of workers reported earning less</span> than<br>
+                        before the crisis (World Bank, 2020).
                     </p>
                 </div>
-                <img class="float-right" src="images/four-section-bottom-content-10.jpg" alt="" data-aos="fade-up">
             </div>
-        </div>
-    </div>
-    <div class="container-fluid fifth-section">
-        <div class="row first-content">
-            <div class="col-lg-12" data-aos="fade-down">
-                <h1 class="text-center mb-5">
-                    With More<br>
-                    <span class="text-primary">Mobility Restrictions,</span>
-                </h1>
-                <p class="mt-lg-5 mx-auto w-50 text-center">
-                    Our growth projection for 2020 is revised to -2.2 percent from -1.6<br>
-                    percent in September (Table ES.1), <span class="text-primary">reflecting a weaker-than-expected</span><br>
-                    recovery in the third quarter and part of the fourth quarter and persistent<br>
-                    mobility restrictions and social distancing amid rising COVID-19 cases.
-                </p>
-            </div>
-            <div class="left-content" data-aos="fade-right">
-                <img src="images/fifth-section-content-05.png" alt="">
-            </div>
-            <div class="right-content" data-aos="fade-up">
-                <img src="images/fifth-section-content-06.png" alt="">
-            </div>
-        </div>
-        <div class="row second-content">
-            <div class="col-lg-12">
-                <div class="wrap-details">
-                    <h1 class="text-white mb-5" data-aos="fade-up">
+            <div class="row two-section">
+                <div class="col-lg-5 offset-lg-1 p-0">
+                    <!-- Chart Public Debt -->
+                    <div class="wrapChartPD" data-aos="fade-up">
+                        <canvas id="chartPD" style="max-height: 50vh;"></canvas>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-4" data-aos="fade-right">
+                    <h1 class="text-white mb-5">
                         Falling into<br>
-                        <span class="text-primary">Poverty</span>
+                        <span class="text-primary">Public Debt</span>
                     </h1>
-                    <div class="d-flex mt-5" data-aos="fade-right">
+                    <p class="text-white mb-5">
+                        <br>
+                        Public debt is rising (Table on the left) and interest<br>
+                        payments are projected to increase to <span class="text-primary">2.4 percent</span> of GDP<br>
+                        per year on average in 2021-2022, compared to <span class="text-primary">1.7 percent</span><br>
+                        of GDP in 2019, and could increase further without reforms.
+                        <br><br><br>
+                    </p>
+                    <a href="index.html" class="button-white">
+                        Indonesia’s GDP Growth
+                    </a>
+                </div>
+            </div>
+            <div class="row three-section">
+                <div class="col-lg-12">
+                    <div class="wrap-details" data-aos="fade-right">
+                        <h1 class="text-white mb-5" >
+                            Indonesia Can<br>
+                            <span class="text-primary">Grow More, But...</span>
+                        </h1>
                         <p class="text-white">
-                            World Bank simulations show that without any<br>
-                            Social Assitance re-sponse, as many as 8.5<br>
-                            million Indonesians could be pushed into<br>
-                            poverty this year due to the COVID-19 crisis.<br>
-                            <br>
-                        </p>
-                        <p class="text-white ml-lg-4">
-                            Therefore, the coverage, adequacy and responsiveness of<br>
-                            the social assistance package would need to be<br>
-                            continuously monitored and improved to protect the poor<br>
-                            and vulnerable.
+                            Indonesia can recover from its recession with a slow and<br>
+                            steady progress, but with the amount of COVID-19 Cases<br>
+                            rising up again, this might be the problem to Indonesia’s<br>
+                            Economic Recovery.
                         </p>
                     </div>
+                    <img class="float-right" src="images/four-section-bottom-content-10.jpg" alt="Digital AR" data-aos="fade-up">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid sixth-section bg-navy">
-        <div class="row first-content pb-100">
-            <div class="col-lg-12">
-                <h1 class="text-white font-53 text-center mb-5 mx-auto w-40" data-aos="fade-down">
-                    2021 and 2022 is The Year to Strengthen, But...
-                </h1>
-                <p class="text-white font-13 mt-lg-5 mx-auto w-30p5 text-center" data-aos="fade-down">
-                    Growth could drop to <span class="text-primary"><b>3.1 percent in 2021</b></span> and <span class="text-primary"><b>3.8 percent in 2022</b></span> under a downside scenario of severe tightening of mobility restrictions and increased social distancing in Indonesia, and weaker global growth and commodity prices.
-                </p>
-                <div class="w-100 pl-7p" data-aos="fade-left">
-                    <img class="img-fluid w-97" src="images/sixth-section-stats-first-07.png" alt="Digital AR" />
+        <div class="container-fluid fifth-section">
+            <div class="row first-content">
+                <div class="col-lg-12" data-aos="fade-down">
+                    <h1 class="text-center mb-5">
+                        With More<br>
+                        <span class="text-primary">Mobility Restrictions,</span>
+                    </h1>
+                    <p class="mt-lg-5 mx-auto w-50 text-center">
+                        Our growth projection for 2020 is revised to -2.2 percent from -1.6<br>
+                        percent in September (Table ES.1), <span class="text-primary">reflecting a weaker-than-expected</span><br>
+                        recovery in the third quarter and part of the fourth quarter and persistent<br>
+                        mobility restrictions and social distancing amid rising COVID-19 cases.
+                    </p>
+                </div>
+                <div class="left-content" data-aos="fade-right">
+                    <img src="images/fifth-section-content-05.png" alt="Digital AR" />
+                </div>
+                <div class="right-content" data-aos="fade-up">
+                    <img src="images/fifth-section-content-06.png" alt="Digital AR" />
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid seventh-section bg-navy">
-        <div class="row py-100 px-7p">
-            <div class="col-lg-4" data-aos="fade-right">
-                <h1 class="text-white font-53 mb-5 w-65">
-                    3 Things to be <span class="text-primary"><b>Improved</b></span>
-                </h1>
-                <p class="text-white font-13 w-72">
-                    Looking ahead, thhe focus for Indonesia is therefore recommended to be on securing and accelerating recovery. A First Order priority is to <span class="text-primary"><b>avoid setbacks due to adverse developments with the pandemic.</b></span>
-                </p>
-            </div>
-            <div class="col-lg-8">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-4 text-center" data-aos="fade-up">
-                            <div class="num">1.</div>
-                            <img class="img-fluid mb-3 w-50 mx-auto" src="images/seventh-section-content-01.png" alt="Digital AR" />
-                            <p class="w-70 font-13 mx-auto"><span class="text-primary"><b>PUBLIC HEALTH</b></span></p>
-                            <p class="text-white font-13 w-70 mx-auto">Avoid COVID-19 Rising Cases by Improving Health Services</p>
-                        </div>
-                        <div class="col-lg-4 text-center" data-aos="fade-up">
-                            <div class="num">2.</div>
-                            <img class="img-fluid mb-3 w-50 mx-auto" src="images/seventh-section-content-02.png" alt="Digital AR" />
-                            <p class="w-70 font-13 mx-auto"><span class="text-primary"><b>FOOD SECURITY</b></span></p>
-                            <p class="text-white font-13 w-70 mx-auto">To Create a Productive Impact, We Must Ensure Their Basic Needs </p>
-                        </div>
-                        <div class="col-lg-4 text-center" data-aos="fade-up">
-                            <div class="num">3.</div>
-                            <img class="img-fluid mb-3 w-50 mx-auto" src="images/seventh-section-content-03.png" alt="Digital AR" />
-                            <p class="w-70 font-13 mx-auto"><span class="text-primary"><b>PUBLIC SPENDING TO AGRI-FOOD SYSTEM</b></span></p>
-                            <p class="text-white font-13 w-70 mx-auto">Gaining Food Security with Agri-Food System</p>
+            <div class="row second-content">
+                <div class="col-lg-12">
+                    <div class="wrap-details">
+                        <h1 class="text-white mb-5" data-aos="fade-up">
+                            Falling into<br>
+                            <span class="text-primary">Poverty</span>
+                        </h1>
+                        <div class="d-flex mt-5" data-aos="fade-right">
+                            <p class="text-white">
+                                World Bank simulations show that without any<br>
+                                Social Assitance re-sponse, as many as 8.5<br>
+                                million Indonesians could be pushed into<br>
+                                poverty this year due to the COVID-19 crisis.<br>
+                                <br>
+                            </p>
+                            <p class="text-white ml-lg-4">
+                                Therefore, the coverage, adequacy and responsiveness of<br>
+                                the social assistance package would need to be<br>
+                                continuously monitored and improved to protect the poor<br>
+                                and vulnerable.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row py-100 px-7p">
-            <div class="col-lg-6" data-aos="fade-up">
-                <img class="img-fluid w-90" src="images/seventh-section-content-04.jpg" alt="Digital AR" />
-                <img class="img-fluid bottle" src="images/seventh-section-content-05.png" alt="Digital AR" />
-            </div>
-            <div class="col-lg-6 pl-2p" data-aos="fade-left">
-                <p class="font-13"><span class="text-primary"><b>01 - PUBLIC HEALTH</b></span></p>
-                <h1 class="text-white font-53 mb-5 w-50">
-                    Public Health
-                    <span class="text-primary"><b>is the Key</b></span>
-                </h1>
-                <p class="text-white font-13 w-74">
-                    Public health remains a top priority to allow the economy to stay open and to move towards a safe full reopening. This requires continued improvement in testing and contact tracing, and other public health measures as well as preparation to procure and widely administer an effective and safe vaccine once it is developed and approved.
-                </p>
+        <div class="container-fluid sixth-section bg-navy">
+            <div class="row first-content pb-100">
+                <div class="col-lg-12">
+                    <h1 class="text-white font-53 text-center mb-5 mx-auto w-40" data-aos="fade-down">
+                        2021 and 2022 is The Year to Strengthen, But...
+                    </h1>
+                    <p class="text-white font-13 mt-lg-5 mx-auto w-30p5 text-center mb-5" data-aos="fade-down">
+                        Growth could drop to <span class="text-primary"><b>3.1 percent in 2021</b></span> and <span class="text-primary"><b>3.8 percent in 2022</b></span> under a downside scenario of severe tightening of mobility restrictions and increased social distancing in Indonesia, and weaker global growth and commodity prices.
+                    </p>
+                    <div class="w-100 pl-7p" data-aos="fade-left">
+                        <!-- Chart Gross Domestic Product -->
+                        <div class="wrapChartGDP mx-auto w-90">
+                            <canvas id="chartGDP" style="max-height: 50vh;"></canvas>
+                        </div>
+                        <!-- <img class="img-fluid w-97" src="images/sixth-section-stats-first-07.png" alt="Digital AR" /> -->
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row py-7p position-relative">
-            <div class="col-lg-6 pl-0" data-aos="fade-right">
-                <img class="img-fluid w-92" src="images/seventh-section-content-06.jpg" alt="Digital AR" />
+        <div class="comWrap">
+            <div class="comCategory bg-white">
+                <p class="font-13 text-primary mb-0">MAIN PROBLEM</p>
             </div>
-            <div class="col-lg-6 pl-2p" data-aos="fade-up">
-                <div class="pb-150 w-85">
-                    <p class="font-13"><span class="text-primary"><b>02 - FOOD SECURITY</b></span></p>
+        </div>
+    </div>
+    <div class="seven-wrap-section position-relative">
+        <div id="tar-solution" class="tarPos"></div>
+        <div class="container-fluid seventh-section bg-navy">
+            <div class="row py-100 px-7p">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <h1 class="text-white font-53 mb-5 w-65">
+                        3 Things to be <span class="text-primary"><b>Improved</b></span>
+                    </h1>
+                    <p class="text-white font-13 w-72">
+                        Looking ahead, thhe focus for Indonesia is therefore recommended to be on securing and accelerating recovery. A First Order priority is to <span class="text-primary"><b>avoid setbacks due to adverse developments with the pandemic.</b></span>
+                    </p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4 text-center" data-aos="fade-up">
+                                <div class="num">1.</div>
+                                <img class="img-fluid mb-3 w-50 mx-auto" src="images/seventh-section-content-01.png" alt="Digital AR" />
+                                <p class="w-70 font-13 mx-auto"><span class="text-primary"><b>PUBLIC HEALTH</b></span></p>
+                                <p class="text-white font-13 w-70 mx-auto">Avoid COVID-19 Rising Cases by Improving Health Services</p>
+                            </div>
+                            <div class="col-lg-4 text-center" data-aos="fade-up">
+                                <div class="num">2.</div>
+                                <img class="img-fluid mb-3 w-50 mx-auto" src="images/seventh-section-content-02.png" alt="Digital AR" />
+                                <p class="w-70 font-13 mx-auto"><span class="text-primary"><b>FOOD SECURITY</b></span></p>
+                                <p class="text-white font-13 w-70 mx-auto">To Create a Productive Impact, We Must Ensure Their Basic Needs </p>
+                            </div>
+                            <div class="col-lg-4 text-center" data-aos="fade-up">
+                                <div class="num">3.</div>
+                                <img class="img-fluid mb-3 w-50 mx-auto" src="images/seventh-section-content-03.png" alt="Digital AR" />
+                                <p class="w-70 font-13 mx-auto"><span class="text-primary"><b>PUBLIC SPENDING TO AGRI-FOOD SYSTEM</b></span></p>
+                                <p class="text-white font-13 w-70 mx-auto">Gaining Food Security with Agri-Food System</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-100 px-7p">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <img class="img-fluid w-90" src="images/seventh-section-content-04.jpg" alt="Digital AR" />
+                    <img class="img-fluid bottle" src="images/seventh-section-content-05.png" alt="Digital AR" />
+                </div>
+                <div class="col-lg-6 pl-2p" data-aos="fade-left">
+                    <p class="font-13"><span class="text-primary"><b>01 - PUBLIC HEALTH</b></span></p>
+                    <h1 class="text-white font-53 mb-5 w-50">
+                        Public Health
+                        <span class="text-primary"><b>is the Key</b></span>
+                    </h1>
+                    <p class="text-white font-13 w-74">
+                        Public health remains a top priority to allow the economy to stay open and to move towards a safe full reopening. This requires continued improvement in testing and contact tracing, and other public health measures as well as preparation to procure and widely administer an effective and safe vaccine once it is developed and approved.
+                    </p>
+                </div>
+            </div>
+            <div class="row py-7p position-relative">
+                <div class="col-lg-6 pl-0" data-aos="fade-right">
+                    <img class="img-fluid fodsec" src="images/seventh-section-content-06.jpg" alt="Digital AR" />
+                </div>
+                <div class="col-lg-6 pl-2p" data-aos="fade-up">
+                    <div class="pb-150 w-85">
+                        <p class="font-13"><span class="text-primary"><b>02 - FOOD SECURITY</b></span></p>
+                        <h1 class="text-white font-53 mb-5 w-70">
+                            Challenges Through
+                            <span class="text-primary"><b>Food Security</b></span>
+                        </h1>
+                        <table class="text-white">
+                            <tr>
+                                <td><img class="img-fluid w-100" src="images/seventh-section-content-07.png" alt="Digital AR" /></td>
+                                <td><p class="mb-0 font-13">First, the food security approach needs to be broadened to address Indonesia’s needs and realize the comprehensive food security vision enshrined in the Food Law.</p></td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid w-100" src="images/seventh-section-content-08.png" alt="Digital AR" /></td>
+                                <td><p class="mb-0 font-13">Second, policy goals need to be readjusted, policy instruments retuned and the policy scope redefined.</p></td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-fluid w-100" src="images/seventh-section-content-09.png" alt="Digital AR" /></td>
+                                <td><p class="mb-0 font-13">Third, public expenditures need to be reallocated for a greater and more productive impact.</p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="w-85" data-aos="fade-in">
+                        <p class="font-13"><span class="text-primary"><b>02.1 - FOOD SECURITY</b></span></p>
+                        <h1 class="text-white font-53 mb-5 w-80">
+                            Adjusting Policy Goals
+                            <span class="text-primary"><b>To Enhance</b></span>
+                        </h1>
+                        <div id="accordionFirst">
+                            <!-- Menu -->
+                            <div class="card">
+                                <div class="card-header" id="afHOne">
+                                    <a data-toggle="collapse" data-target="#afCOne" aria-expanded="true" aria-controls="afCOne">
+                                        <i class="fas fa-chevron-left"></i> Productivity
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="afHTwo">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#afCTwo" aria-expanded="false" aria-controls="afCTwo">
+                                        <i class="fas fa-chevron-left"></i> Diversification
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="afHThree">
+                                    <a class="collapsed" data-toggle="collapse" data-target="#afCThree" aria-expanded="false" aria-controls="afCThree">
+                                        <i class="fas fa-chevron-left"></i> Competitiveness
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <div id="afCOne" class="collapse show" aria-labelledby="afHOne" data-parent="#accordionFirst">
+                                <div class="card-body" style="background-color: #001c38;color: #fff">
+                                    <p class="font-13">Shifting from an exclusive focus on increasing output to increasing productivity of crops and livestock 1</p>
+                                </div>
+                            </div>
+                            <div id="afCTwo" class="collapse" aria-labelledby="afHTwo" data-parent="#accordionFirst">
+                                <div class="card-body" style="background-color: #00adee;color: #fff">
+                                    <p class="font-13">Shifting from an exclusive focus on increasing output to increasing productivity of crops and livestock 2</p>
+                                </div>
+                            </div>
+                            <div id="afCThree" class="collapse" aria-labelledby="afHThree" data-parent="#accordionFirst">
+                                <div class="card-body" style="background-color: #fff;color: #001c38">
+                                    <p class="font-13">Shifting from an exclusive focus on increasing output to increasing productivity of crops and livestock 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-100 px-7p" data-aos="fade-up">
+                <div class=" offset-lg-6 col-lg-6 pl-2p">
+                    <p class="font-13"><span class="text-primary"><b>03 - PUBLIC SPENDING TO AGRI-FOOD SYSTEM</b></span></p>
                     <h1 class="text-white font-53 mb-5 w-70">
-                        Challenges Through
-                        <span class="text-primary"><b>Food Security</b></span>
+                        Shifting Focus of
+                        <span class="text-primary"><b>The Public Spending</b></span>
                     </h1>
-                    <table class="text-white">
-                        <tr>
-                            <td><img class="img-fluid w-100" src="images/seventh-section-content-07.png" alt="Digital AR" /></td>
-                            <td><p class="mb-0 font-13">First, the food security approach needs to be broadened to address Indonesia’s needs and realize the comprehensive food security vision enshrined in the Food Law.</p></td>
-                        </tr>
-                        <tr>
-                            <td><img class="img-fluid w-100" src="images/seventh-section-content-08.png" alt="Digital AR" /></td>
-                            <td><p class="mb-0 font-13">Second, policy goals need to be readjusted, policy instruments retuned and the policy scope redefined.</p></td>
-                        </tr>
-                        <tr>
-                            <td><img class="img-fluid w-100" src="images/seventh-section-content-09.png" alt="Digital AR" /></td>
-                            <td><p class="mb-0 font-13">Third, public expenditures need to be reallocated for a greater and more productive impact.</p></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="w-85" data-aos="fade-in">
-                    <p class="font-13"><span class="text-primary"><b>02.1 - FOOD SECURITY</b></span></p>
-                    <h1 class="text-white font-53 mb-5 w-80">
-                        Adjusting Policy Goals
-                        <span class="text-primary"><b>To Enhance</b></span>
-                    </h1>
-                    <div id="accordionFirst">
+                    <div id="accordionSecond">
                         <!-- Menu -->
                         <div class="card">
-                            <div class="card-header" id="afHOne">
-                                <a data-toggle="collapse" data-target="#afCOne" aria-expanded="true" aria-controls="afCOne">
-                                    <i class="fas fa-chevron-left"></i> Productivity
+                            <div class="card-header" id="asHOne">
+                                <a data-toggle="collapse" data-target="#asCOne" aria-expanded="true" aria-controls="asCOne">
+                                    <div class="num">1.</div>
+                                    <span class="boxc">Reducing Subsidies Large Fertilizer</span>
+                                </a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="asHTwo">
+                                <a class="collapsed" data-toggle="collapse" data-target="#asCTwo" aria-expanded="false" aria-controls="asCTwo">
+                                    <div class="num">2.</div>
+                                    <span class="boxc">Alocate More Resources</span>
                                 </a>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="afHTwo">
-                                <a class="collapsed" data-toggle="collapse" data-target="#afCTwo" aria-expanded="false" aria-controls="afCTwo">
-                                    <i class="fas fa-chevron-left"></i> Diversification
+                            <div class="card-header" id="asHThree">
+                                <a class="collapsed" data-toggle="collapse" data-target="#asCThree" aria-expanded="false" aria-controls="asCThree">
+                                    <div class="num">3.</div>
+                                    <span class="boxc">Investment</span>
                                 </a>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="afHThree">
-                                <a class="collapsed" data-toggle="collapse" data-target="#afCThree" aria-expanded="false" aria-controls="afCThree">
-                                    <i class="fas fa-chevron-left"></i> Competitiveness
+                            <div class="card-header" id="asHFour">
+                                <a class="collapsed" data-toggle="collapse" data-target="#asCFour" aria-expanded="false" aria-controls="asCFour">
+                                    <div class="num">4.</div>
+                                    <span class="boxc">Rebalance Irrigation</span>
                                 </a>
                             </div>
                         </div>
                         <!-- Description -->
-                        <div id="afCOne" class="collapse show" aria-labelledby="afHOne" data-parent="#accordionFirst">
-                            <div class="card-body" style="background-color: #001c38;color: #fff">
-                                <p class="font-13">Shifting from an exclusive focus on increasing output to increasing productivity of crops and livestock 1</p>
+                        <div id="asCOne" class="collapse show" aria-labelledby="asHOne" data-parent="#accordionSecond">
+                            <div class="card-body row py-5">
+                                <div class="col-lg-12">
+                                    <img class="img-fluid w-100 mb-5" src="images/seventh-section-content-10.jpg" alt="Digital AR" />
+                                </div>
+                                <div class="col-lg-3">
+                                    <h1 class="text-white font-53 w-70">
+                                        Step
+                                        <span class="text-primary"><b>01</b></span>
+                                    </h1>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="col-lg-9 pl-4">
+                                    <p class="font-13 text-white mb-0">
+                                        It is recommended that the large fertilizer subsidies are reduced in a phased manner. Instead, these could be redeployed for strengthening technical and regulatory services, which are critical for improving agricultural productivity, managing production-related risks, reducing agriculture’s environmental footprint and promoting (demand-driven) agricultural diversification.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div id="afCTwo" class="collapse" aria-labelledby="afHTwo" data-parent="#accordionFirst">
-                            <div class="card-body" style="background-color: #00adee;color: #fff">
-                                <p class="font-13">Shifting from an exclusive focus on increasing output to increasing productivity of crops and livestock 2</p>
+                        <div id="asCTwo" class="collapse" aria-labelledby="asHTwo" data-parent="#accordionSecond">
+                            <div class="card-body row py-5">
+                                <div class="col-lg-12">
+                                    <img class="img-fluid w-100 mb-5" src="images/seventh-section-content-10.jpg" alt="Digital AR" />
+                                </div>
+                                <div class="col-lg-3">
+                                    <h1 class="text-white font-53 w-70">
+                                        Step
+                                        <span class="text-primary"><b>02</b></span>
+                                    </h1>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="col-lg-9 pl-4">
+                                    <p class="font-13 text-white mb-0">
+                                        It is recommended that the large fertilizer subsidies are reduced in a phased manner. Instead, these could be redeployed for strengthening technical and regulatory services, which are critical for improving agricultural productivity, managing production-related risks, reducing agriculture’s environmental footprint and promoting (demand-driven) agricultural diversification.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div id="afCThree" class="collapse" aria-labelledby="afHThree" data-parent="#accordionFirst">
-                            <div class="card-body" style="background-color: #fff;color: #001c38">
-                                <p class="font-13">Shifting from an exclusive focus on increasing output to increasing productivity of crops and livestock 3</p>
+                        <div id="asCThree" class="collapse" aria-labelledby="asHThree" data-parent="#accordionSecond">
+                            <div class="card-body row py-5">
+                                <div class="col-lg-12">
+                                    <img class="img-fluid w-100 mb-5" src="images/seventh-section-content-10.jpg" alt="Digital AR" />
+                                </div>
+                                <div class="col-lg-3">
+                                    <h1 class="text-white font-53 w-70">
+                                        Step
+                                        <span class="text-primary"><b>03</b></span>
+                                    </h1>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="col-lg-9 pl-4">
+                                    <p class="font-13 text-white mb-0">
+                                        It is recommended that the large fertilizer subsidies are reduced in a phased manner. Instead, these could be redeployed for strengthening technical and regulatory services, which are critical for improving agricultural productivity, managing production-related risks, reducing agriculture’s environmental footprint and promoting (demand-driven) agricultural diversification.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="asCFour" class="collapse" aria-labelledby="asHFour" data-parent="#accordionSecond">
+                            <div class="card-body row py-5">
+                                <div class="col-lg-12">
+                                    <img class="img-fluid w-100 mb-5" src="images/seventh-section-content-10.jpg" alt="Digital AR" />
+                                </div>
+                                <div class="col-lg-3">
+                                    <h1 class="text-white font-53 w-70">
+                                        Step
+                                        <span class="text-primary"><b>04</b></span>
+                                    </h1>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="col-lg-9 pl-4">
+                                    <p class="font-13 text-white mb-0">
+                                        It is recommended that the large fertilizer subsidies are reduced in a phased manner. Instead, these could be redeployed for strengthening technical and regulatory services, which are critical for improving agricultural productivity, managing production-related risks, reducing agriculture’s environmental footprint and promoting (demand-driven) agricultural diversification.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row py-100 px-7p" data-aos="fade-up">
-            <div class=" offset-lg-6 col-lg-6 pl-2p">
-                <p class="font-13"><span class="text-primary"><b>03 - PUBLIC SPENDING TO AGRI-FOOD SYSTEM</b></span></p>
-                <h1 class="text-white font-53 mb-5 w-70">
-                    Shifting Focus of
-                    <span class="text-primary"><b>The Public Spending</b></span>
-                </h1>
-                <div id="accordionSecond">
-                    <!-- Menu -->
-                    <div class="card">
-                        <div class="card-header" id="asHOne">
-                            <a data-toggle="collapse" data-target="#asCOne" aria-expanded="true" aria-controls="asCOne">
-                                <div class="num">1.</div>
-                                <span>Reducing Subsidies Large Fertilizer</span>
-                            </a>
-                        </div>                        
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="asHTwo">
-                            <a class="collapsed" data-toggle="collapse" data-target="#asCTwo" aria-expanded="false" aria-controls="asCTwo">
-                                <div class="num">2.</div>
-                                <span>Alocate More Resources</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="asHThree">
-                            <a class="collapsed" data-toggle="collapse" data-target="#asCThree" aria-expanded="false" aria-controls="asCThree">
-                                <div class="num">3.</div>
-                                <span>Investment</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="asHFour">
-                            <a class="collapsed" data-toggle="collapse" data-target="#asCFour" aria-expanded="false" aria-controls="asCFour">
-                                <div class="num">4.</div>
-                                <span>Rebalance Irrigation</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Description -->
-                    <div id="asCOne" class="collapse show" aria-labelledby="asHOne" data-parent="#accordionSecond">
-                        <div class="card-body row py-5">
-                            <div class="col-lg-12">
-                                <img class="img-fluid w-100 mb-5" src="images/seventh-section-content-10.jpg" alt="Digital AR" />
-                            </div>
-                            <div class="col-lg-3">
-                                <h1 class="text-white font-53 w-70">
-                                    Step
-                                    <span class="text-primary"><b>01</b></span>
-                                </h1>
-                                <span class="line"></span>
-                            </div>
-                            <div class="col-lg-9 pl-4">
-                                <p class="font-13 text-white mb-0">
-                                    It is recommended that the large fertilizer subsidies are reduced in a phased manner. Instead, these could be redeployed for strengthening technical and regulatory services, which are critical for improving agricultural productivity, managing production-related risks, reducing agriculture’s environmental footprint and promoting (demand-driven) agricultural diversification.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="asCTwo" class="collapse" aria-labelledby="asHTwo" data-parent="#accordionSecond">
-                        <div class="card-body row py-5">
-                            <div class="col-lg-12">
-                                <img class="img-fluid w-100 mb-5" src="images/seventh-section-content-10.jpg" alt="Digital AR" />
-                            </div>
-                            <div class="col-lg-3">
-                                <h1 class="text-white font-53 w-70">
-                                    Step
-                                    <span class="text-primary"><b>02</b></span>
-                                </h1>
-                                <span class="line"></span>
-                            </div>
-                            <div class="col-lg-9 pl-4">
-                                <p class="font-13 text-white mb-0">
-                                    It is recommended that the large fertilizer subsidies are reduced in a phased manner. Instead, these could be redeployed for strengthening technical and regulatory services, which are critical for improving agricultural productivity, managing production-related risks, reducing agriculture’s environmental footprint and promoting (demand-driven) agricultural diversification.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="asCThree" class="collapse" aria-labelledby="asHThree" data-parent="#accordionSecond">
-                        <div class="card-body row py-5">
-                            <div class="col-lg-12">
-                                <img class="img-fluid w-100 mb-5" src="images/seventh-section-content-10.jpg" alt="Digital AR" />
-                            </div>
-                            <div class="col-lg-3">
-                                <h1 class="text-white font-53 w-70">
-                                    Step
-                                    <span class="text-primary"><b>03</b></span>
-                                </h1>
-                                <span class="line"></span>
-                            </div>
-                            <div class="col-lg-9 pl-4">
-                                <p class="font-13 text-white mb-0">
-                                    It is recommended that the large fertilizer subsidies are reduced in a phased manner. Instead, these could be redeployed for strengthening technical and regulatory services, which are critical for improving agricultural productivity, managing production-related risks, reducing agriculture’s environmental footprint and promoting (demand-driven) agricultural diversification.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="asCFour" class="collapse" aria-labelledby="asHFour" data-parent="#accordionSecond">
-                        <div class="card-body row py-5">
-                            <div class="col-lg-12">
-                                <img class="img-fluid w-100 mb-5" src="images/seventh-section-content-10.jpg" alt="Digital AR" />
-                            </div>
-                            <div class="col-lg-3">
-                                <h1 class="text-white font-53 w-70">
-                                    Step
-                                    <span class="text-primary"><b>04</b></span>
-                                </h1>
-                                <span class="line"></span>
-                            </div>
-                            <div class="col-lg-9 pl-4">
-                                <p class="font-13 text-white mb-0">
-                                    It is recommended that the large fertilizer subsidies are reduced in a phased manner. Instead, these could be redeployed for strengthening technical and regulatory services, which are critical for improving agricultural productivity, managing production-related risks, reducing agriculture’s environmental footprint and promoting (demand-driven) agricultural diversification.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="comWrap">
+            <div class="comCategory bg-lightblue">
+                <p class="font-13 text-white mb-0">SOLUTION</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid eighth-section">
+    <div class="container-fluid eighth-section position-relative">
+        <div id="tar-further-info" class="tarPos"></div>
         <div class="row">
             <div class="col-lg-12 p-0">
                 <img class="img-fluid w-100" src="images/eighth-section-content-01.jpg" alt="Digital AR" />
@@ -516,7 +1015,7 @@
         <div class="row">
             <div class="col-lg-12 px-5">
                 <div class="desc" data-aos="fade-up">
-                    <a href="">
+                    <a href="index.html">
                         <img class="mb-15p" src="images/logo.png" alt="Digital AR" />
                     </a>
                     <h1 class="font-53 mb-10p w-40 text-white">
@@ -525,7 +1024,7 @@
                     <p class="font-13 text-white w-60 mb-10p">
                         he World Bank Group works in every major area of development. We provide a wide array of financial products and technical assistance, and we help countries share and apply innovative knowledge and solutions to the challenges they face.
                     </p>
-                    <a href="" class="btn-defblue">Visit Our Website</a>
+                    <a href="index.html" class="btn-defblue">Visit Our Website</a>
                 </div>
                 <span class="line"></span>
             </div>
@@ -534,24 +1033,8 @@
                 <p class="font-17 mb-0 float-right"><span class="text-primary">Contact us through contact@theworldbank.com</span></p>
             </div>
             <a id="gotop" class="gotop" href="">
-                <img src="images/ninth-section-content-02.png" alt="Digital AR" />
+                <img class="boxc" src="images/ninth-section-content-02.png" alt="Digital AR" />
             </a>
-        </div>
-    </div>
-    <div class="container-fluid tenth-section bg-navy">
-        <div class="row">
-            <div class="col-lg-12 p-5 targetCovidAPI">
-                <h1 class="text-white font-53 mb-5 w-65">
-                    Data Harian Kasus per Provinsi<br /><span class="text-primary"><b>COVID-19 Indonesia</b></span>
-                </h1>
-                <p class="text-white font-13 w-72 mb-5">
-                    Source: <i><a class="text-white" target="_blank" href="https://bnpb-inacovid19.hub.arcgis.com/datasets/data-harian-kasus-per-provinsi-covid-19-indonesia/api">https://bnpb-inacovid19.hub.arcgis.com/datasets/data-harian-kasus-per-provinsi-covid-19-indonesia/api</a></i>
-                </p>
-                <h2 class="text-white font-53 mb-3 w-65">Display Loop API</h2>
-                <div id="targetCovidAPILoop" class="mb-5"></div>
-                <h2 class="text-white font-53 mb-3 w-65">Display Single API</h2>
-                <div id="targetCovidAPISingle"></div>
-            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
