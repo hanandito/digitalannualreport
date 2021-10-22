@@ -3,6 +3,12 @@
     AOS.init({
       duration: 1200
     });
+    $('nav .burger').click(function() {
+      $('.sideNav').addClass("active");
+    })
+    $('.closeSideNav').click(function() {
+      $('.sideNav').removeClass("active");
+    })
     $('.menu-icon').click(function() {
       $('.side-menu').addClass("active");
     })
@@ -237,25 +243,7 @@
 // ==========FETCH API================
 // ===================================
 
-// Connection Testing
-// function fetchDataTest() {
-//   fetch('https://urlHere.test/')
-//     .then(response => {
-//       if (!response.ok) {
-//         throw Error('ERROR');
-//       }
-//       return response.json();
-//     })
-//     .then(dataWrapMapTest => {
-//       console.log(dataWrapMapTest);
-//     })
-//     .catch(error => {
-//       console.log(error);
-//     });
-// }
-// fetchDataTest();
-
-// Fetch Data Covid 19 first step in Indonesia
+// Data Covid 19 first step in Indonesia
   function fetchCFI() {
     fetch('https://api.covid19api.com/dayone/country/indonesia/status/confirmed')
       .then(response => {
@@ -293,7 +281,7 @@
   }
   fetchCFI();
 
-// Fetch Data Map
+// Data Map
   function fetchDataMap() {
     fetch('https://services5.arcgis.com/VS6HdKS0VfIhv8Ct/arcgis/rest/services/COVID19_Indonesia_per_Provinsi/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json')
       .then(response => {
@@ -642,7 +630,7 @@
   }
   fetchDataMap();
 
-// Fetch Data Map 2
+// Data Map 2
   function fetchDataMap2() {
     fetch('https://covid19.mathdro.id/api/countries/ID/confirmed')
       .then(response => {
@@ -676,13 +664,12 @@
   }
   fetchDataMap2();
 
-// Fetch Data Gross Domestic Product (GDP)
-  // Display to chart
-  charGDP();
-  async function charGDP() {
-    const data = await fetchDataGDP();
-    const ctx = document.getElementById('myChart').getContext('2d');
-    const myChart = new Chart(ctx, {
+// Data Public Debt
+  charPD();
+  async function charPD() {
+    const data = await fetchDataPD();
+    const ctx = document.getElementById('chartPD').getContext('2d');
+    const chartPD = new Chart(ctx, {
       type: 'line',
       data: {
         labels: data.xs,
@@ -703,7 +690,7 @@
         plugins: {
           legend: {
             display: true,
-            position: 'left',
+            position: 'top',
             labels: {
               color: '#fff'
             }
@@ -736,8 +723,7 @@
       }
     });
   }
-  // Fetch Data
-  async function fetchDataGDP() {
+  async function fetchDataPD() {
     const xs = [];
     const ys = [];
     const response = await fetch('https://api.tradingeconomics.com/historical/country/indonesia/indicator/gdp?c=guest:guest&format=json');
@@ -753,20 +739,87 @@
     return { xs, ys };
   }
 
+// Data Unemployment Rate
+  var ctx2 = document.getElementById('chartUR').getContext('2d');
+  var chartUR = new Chart(ctx2, {
+    type: 'bar',
+    data: {
+      labels: ['Become Unemployed', 'Working Reduced Hours Due to COVID-19'],
+      datasets: [{
+        label: 'The Working Age Population',
+        data: [5100000, 24000000],
+        backgroundColor: ['#00adee'],
+        borderColor: ['#00adee'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins: {
+        legend: {
+          display: false
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
 
-
-
-
-
-
-
-
-  
-  $(document).ready(function() {
-    $('nav .burger').click(function() {
-      $('.sideNav').addClass("active");
-    })
-    $('.closeSideNav').click(function() {
-      $('.sideNav').removeClass("active");
-    })
+// Data Gross Domestic Product (GDP)
+  var ctx3 = document.getElementById('chartGDP').getContext('2d');
+  var chartGDP = new Chart(ctx3, {
+    type: 'line',
+    data: {
+      labels: [2019, 2020, 2021, 2022],
+      datasets: [{
+        label: 'Percent of GDP',
+        data: [5.0, -2.2, 4.4, 4.8],
+        backgroundColor: ['#00adee'],
+        borderColor: ['#fff'],
+        pointBackgroundColor: ['#00adee'],
+        pointBorderColor: ['#00adee'],
+        borderWidth: 2,
+        pointBorderWidth: 10,
+        pointHitRadius: 10,
+        pointHoverBorderWidth: 10
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top',
+          labels: {
+            color: '#00adee'
+          }
+        },
+        tooltip: {
+          callbacks: {
+            labelColor: function(context) {
+              return {
+                borderColor: '#00adee',
+                backgroundColor: '#00adee',
+                borderWidth: 2,
+                borderRadius: 2,
+              };
+            },
+            labelTextColor: function(context) {
+              return '#fff';
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          ticks: {
+            callback: function(value, index, values) {
+              return value + '';
+            }
+          }
+        }
+      }
+    }
   });
