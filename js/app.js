@@ -474,7 +474,7 @@
 
 // Data Map 2
   function fetchDataMap2() {
-    fetch('https://covid19.mathdro.id/api/countries/ID/confirmed')
+    fetch("https://cors-anywhere.herokuapp.com/https://data.covid19.go.id/public/api/update.json")
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
@@ -485,17 +485,18 @@
         console.log(dataWrapMap2);
 
         // ============ Display Indonesia Covid 19 ============
-        const getDataPMS = dataWrapMap2[0];
+        const getDataPMS = dataWrapMap2.update;
+        const getDataPMA = dataWrapMap2.data;
         const displayDataPMS = `
-          <span class="num">${getDataPMS.active}</span>
+          <span class="num">${getDataPMS.total.jumlah_positif}</span>
           <span class="desc">Total Positive Cases in Indonesia</span>
-          <span class="num">XXXXXXXX</span>
+          <span class="num"></span>
           <span class="desc">Total Fully Vaccinated in Indonesia</span>
-          <span class="num">${getDataPMS.confirmed}</span>
+          <span class="num">${getDataPMA.total_spesimen}</span>
           <span class="desc">Total Confirmed Cases in Indonesia</span>
-          <span class="num">${getDataPMS.active}</span>
+          <span class="num">${getDataPMS.total.jumlah_positif}</span>
           <span class="desc">Total Active Cases in Indonesia</span>
-          <span class="num">${getDataPMS.deaths}</span>
+          <span class="num">${getDataPMS.total.jumlah_meninggal}</span>
           <span class="desc">Total Deaths in Indonesia</span>
         `;
         document.querySelector('#iTD').insertAdjacentHTML('afterbegin', displayDataPMS);
