@@ -474,23 +474,33 @@
 
 // Data Map 2
   function fetchDataMap2() {
+    Promise.all([
     fetch("https://cors-anywhere.herokuapp.com/https://data.covid19.go.id/public/api/update.json")
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
         }
         return response.json();
+      }),
+      fetch("https://cors-anywhere.herokuapp.com/https://data.covid19.go.id/public/api/pemeriksaan-vaksinasi.json")
+      .then(response => {
+        if (!response.ok) {
+          throw Error('ERROR');
+        }
+        return response.json();
       })
-      .then(dataWrapMap2 => {
-        console.log(dataWrapMap2);
+    ])
+      .then(([dataWrapMap2, dataWrapMap3]) => {
+        console.log(dataWrapMap2, dataWrapMap3);
 
         // ============ Display Indonesia Covid 19 ============
         const getDataPMS = dataWrapMap2.update;
         const getDataPMA = dataWrapMap2.data;
+        const getDataPMB = dataWrapMap3.vaksinasi;
         const displayDataPMS = `
           <span class="num">${getDataPMS.total.jumlah_positif}</span>
           <span class="desc">Total Positive Cases in Indonesia</span>
-          <span class="num"></span>
+          <span class="num">${getDataPMB.total.jumlah_vaksinasi_1}</span>
           <span class="desc">Total Fully Vaccinated in Indonesia</span>
           <span class="num">${getDataPMA.total_spesimen}</span>
           <span class="desc">Total Confirmed Cases in Indonesia</span>
