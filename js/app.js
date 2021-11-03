@@ -125,7 +125,7 @@
 
 // Data Map
   function fetchDataMap() {
-    fetch('https://services5.arcgis.com/VS6HdKS0VfIhv8Ct/arcgis/rest/services/COVID19_Indonesia_per_Provinsi/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json')
+    fetch('https://cors-anywhere.herokuapp.com/https://data.covid19.go.id/public/api/update.json')
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
@@ -498,16 +498,10 @@
         const getDataPMA = dataWrapMap2.data;
         const getDataPMB = dataWrapMap3.vaksinasi;
         const displayDataPMS = `
-          <span class="num">${getDataPMS.total.jumlah_positif}</span>
+          <span class="num">${getDataPMA.total_spesimen}</span>
           <span class="desc">Total Positive Cases in Indonesia</span>
           <span class="num">${getDataPMB.total.jumlah_vaksinasi_1}</span>
           <span class="desc">Total Fully Vaccinated in Indonesia</span>
-          <span class="num">${getDataPMA.total_spesimen}</span>
-          <span class="desc">Total Confirmed Cases in Indonesia</span>
-          <span class="num">${getDataPMS.total.jumlah_positif}</span>
-          <span class="desc">Total Active Cases in Indonesia</span>
-          <span class="num">${getDataPMS.total.jumlah_meninggal}</span>
-          <span class="desc">Total Deaths in Indonesia</span>
         `;
         document.querySelector('#iTD').insertAdjacentHTML('afterbegin', displayDataPMS);
       })
