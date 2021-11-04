@@ -125,7 +125,7 @@
 
 // Data Map
   function fetchDataMap() {
-    fetch('https://cors-anywhere.herokuapp.com/https://data.covid19.go.id/public/api/update.json')
+    fetch('https://pass-prox.herokuapp.com/https://data.covid19.go.id/public/api/prov.json')
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
@@ -133,15 +133,15 @@
         return response.json();
       })
       .then(dataWrapMap => {
-        console.log(dataWrapMap.features);
+        console.log(dataWrapMap);
 
         // ============ Display Default Point 1 ============
-        const getDataDP1 = dataWrapMap.features[0];
+        const getDataDP1 = dataWrapMap.list_data[21];
         const displayDataDP1 = `
           <span class="covPercent">XX,X%</span>
           <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP1.attributes.Provinsi}
-          <p>Positive Cases : ${getDataDP1.attributes.Kasus_Posi}</p>
+          <p>Province : ${getDataDP1.key}
+          <p>Positive Cases : ${getDataDP1.jumlah_kasus}</p>
           <p>Vaccinated : XXX,XXX</p>
         `;
         document.querySelector('#iMD1').insertAdjacentHTML('afterbegin', displayDataDP1);
@@ -475,14 +475,14 @@
 // Data Map 2
   function fetchDataMap2() {
     Promise.all([
-    fetch("https://cors-anywhere.herokuapp.com/https://data.covid19.go.id/public/api/update.json")
+    fetch("https://pass-prox.herokuapp.com/https://data.covid19.go.id/public/api/update.json")
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
         }
         return response.json();
       }),
-      fetch("https://cors-anywhere.herokuapp.com/https://data.covid19.go.id/public/api/pemeriksaan-vaksinasi.json")
+      fetch("https://pass-prox.herokuapp.com/https://data.covid19.go.id/public/api/pemeriksaan-vaksinasi.json")
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
