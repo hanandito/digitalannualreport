@@ -657,7 +657,7 @@
               return '#fff';
             }
           }
-        }
+        },
       },
       scales: {
         y: {
