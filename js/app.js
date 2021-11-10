@@ -685,4 +685,7 @@
     $('.move-top').css({
       'transform':'translateY('+(windowTop) * -0.1 +'px)'
     });
+    $('.move-bottom').css({
+      'transform':'translateY('+(windowTop) * 0.1 +'px)'
+    });
   });

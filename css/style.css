@@ -206,10 +206,10 @@ p,a{
     position: absolute;
 }
 .fifth-section .left-content{
-    top: 4%;
+    top: 68%;
 }
 .fifth-section .right-content{
-    top: -4%;
+    top: 64%;
     right: 0;
 }
 .fifth-section .second-content{
@@ -221,9 +221,10 @@ p,a{
     bottom: 5%;
     left: 7%;
 }
-.move-top{
+.move-top, .move-bottom{
     transition: none;
 }
+
 @media screen and (max-width: 414px) {
     p {
         font-size: .9rem;
@@ -652,9 +653,14 @@ p,a{
     }
     .seventh-section .bottle{
         position: absolute;
-        bottom: -20%;
+        bottom: -180%;
         right: 1%;
         width: 40%;
+    }
+    .seventh-section .bgbottle{
+        position: absolute;
+        left: 0;
+        bottom: 170%;
     }
     .seventh-section table tr{height: 110px;}
     .seventh-section table tr td:first-child{width: 14%;}
