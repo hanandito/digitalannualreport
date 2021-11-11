@@ -100,7 +100,7 @@ p,a{
     background: url("../images/header-top-05.jpg") no-repeat center center;
     background-size: cover;
     transition: none;
-    transform: scale(2.1);
+    transform: scale(1.1);
 }
 .header-top .content{
     width: 100%;
@@ -158,13 +158,15 @@ p,a{
     right: 5%;
     transform: translateY(-50%);
 }
-/* 
-.second-section .stats{
+.second-third-wrap-section .second-section .image{
     position: absolute;
-    left: 16%;
-    bottom: 13%;
-} 
-*/
+    top: -220px;
+    left: -220px;
+}
+.second-third-wrap-section .second-section .mask{
+    position: absolute;
+    top: -70px;
+}
 .third-section{
     background-image: url(../images/third-section-08.jpg);
     background-size: cover;
