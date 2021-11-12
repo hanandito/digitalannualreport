@@ -787,7 +787,9 @@ p,a{
         background: url('../images/ninth-section-content-01.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
+        background-attachment: fixed;
+        transition: none;
     }
     .ninth-section .desc{
         padding-top: 6%;

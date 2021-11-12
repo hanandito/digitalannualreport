@@ -721,3 +721,12 @@ $(window).on('mousemove click', function(e) {
 });
 
 moveBackground();
+
+
+$(window).scroll(function(){
+  var scroll =  $(document).height() - $(window).height() - $(window).scrollTop();
+  $(".ninth-section").css({
+    backgroundSize:(100 + scroll/5) + "%"
+  })
+}
+)
