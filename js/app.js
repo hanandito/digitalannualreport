@@ -17,7 +17,28 @@
     })
   });
 
-//  Favor
+//  Carousel
+
+$('.carousel-most').addClass('owl-carousel owl-theme').owlCarousel({
+  navText: ["<span><i class='fas fa-chevron-left'></i></span>","<span><i class='fas fa-chevron-right'></i></span>"],
+  responsive:{
+   0: {
+    items: 1,
+    dots: false,
+    nav: false
+   },
+   600: {
+     items: 1,
+     nav: false
+   },
+   1000: {
+     items: 1,
+     dots: false,
+     nav: true,
+     loop: true
+   }
+ }
+})
   
 
 // Animation: Moving Ornament on Scroll

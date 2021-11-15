@@ -815,3 +815,31 @@ p,a{
         background-color: #29b6f6;
     }
     .ninth-section .gotop img{width: 30%;}
+    .carousel-most .owl-item img{
+        width: auto;
+    }
+    .carousel-most .owl-nav button.owl-next span, .carousel-most .owl-nav button.owl-prev span{
+        font-size: 15px;
+    }
+    .carousel-most .owl-nav button.owl-next, .carousel-most .owl-nav button.owl-prev{
+        background-color: #00ADEE;
+        width: 50px;
+        height: 50px;
+        border-radius: 0;
+    }
+    .carousel-most .owl-nav button.owl-next, .carousel-most .owl-nav button.owl-prev{
+        color: #fff;
+    }
+    .carousel-most .owl-nav button.owl-next:hover, .carousel-most .owl-nav button.owl-prev:hover{
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+    }
+    .carousel-most .owl-nav button.owl-next:hover, .carousel-most .owl-nav button.owl-prev:hover{
+        color: #00ADEE;
+    }
+    .carousel-most .owl-nav{
+        position: absolute;
+        left: 6.8%;
+        top: 160px;
+    }
