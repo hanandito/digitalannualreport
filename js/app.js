@@ -87,7 +87,7 @@
 
 // Data Covid 19 first step in Indonesia
   function fetchCFI() {
-    fetch('https://api.covid19api.com/dayone/country/indonesia/status/confirmed')
+    fetch('https://pass-prox.herokuapp.com/https://data.covid19.go.id/public/api/update.json')
       .then(response => {
         if (!response.ok) {
           throw Error('ERROR');
@@ -98,23 +98,23 @@
         console.log(dataWrapCFI);
 
         // ============ Display Indonesia Covid 19 Cases 1 ============
-        const getDataCFI1 = dataWrapCFI[0];
-        const displayDataCFI1 = `${getDataCFI1.Cases}`;
+        const getDataCFI1 = dataWrapCFI.update.harian[0];
+        const displayDataCFI1 = `${getDataCFI1.jumlah_positif_kum.value}`;
         document.querySelector('#iCFI1').insertAdjacentHTML('afterbegin', displayDataCFI1);
         
         // ============ Display Indonesia Covid 19 Cases 2 ============
-        const getDataCFI2 = dataWrapCFI[18];
-        const displayDataCFI2 = `${getDataCFI2.Cases}`;
+        const getDataCFI2 = dataWrapCFI.update.harian[18];
+        const displayDataCFI2 = `${getDataCFI2.jumlah_positif_kum.value}`;
         document.querySelector('#iCFI2').insertAdjacentHTML('afterbegin', displayDataCFI2);
         
         // ============ Display Indonesia Covid 19 Cases 3 ============
-        const getDataCFI3 = dataWrapCFI[44];
-        const displayDataCFI3 = `${getDataCFI3.Cases}`;
+        const getDataCFI3 = dataWrapCFI.update.harian[44];
+        const displayDataCFI3 = `${getDataCFI3.jumlah_positif_kum.value}`;
         document.querySelector('#iCFI3').insertAdjacentHTML('afterbegin', displayDataCFI3);
         
         // ============ Display Indonesia Covid 19 Cases 4 ============
-        const getDataCFI4 = dataWrapCFI[597];
-        const displayDataCFI4 = `${getDataCFI4.Cases}`;
+        const getDataCFI4 = dataWrapCFI.update;
+        const displayDataCFI4 = `${getDataCFI4.total.jumlah_positif}`;
         document.querySelector('#iCFI4').insertAdjacentHTML('afterbegin', displayDataCFI4);
       })
       .catch(error => {
@@ -138,143 +138,117 @@
         // ============ Display Default Point 1 ============
         const getDataDP1 = dataWrapMap.list_data[21];
         const displayDataDP1 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP1.key}
-          <p>Positive Cases : ${getDataDP1.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent"> ${getDataDP1.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP1.key}</p>
         `;
         document.querySelector('#iMD1').insertAdjacentHTML('afterbegin', displayDataDP1);
 
         // ============ Display Default Point 2 ============
         const getDataDP2 = dataWrapMap.list_data[7];
         const displayDataDP2 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP2.key}
-          <p>Positive Cases : ${getDataDP2.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP2.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP2.key}</p>
         `;
         document.querySelector('#iMD2').insertAdjacentHTML('afterbegin', displayDataDP2);
 
         // ============ Display Default Point 3 ============
         const getDataDP3 = dataWrapMap.list_data[11];
         const displayDataDP3 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP3.key}
-          <p>Positive Cases : ${getDataDP3.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP3.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP3.key}</p>
         `;
         document.querySelector('#iMD3').insertAdjacentHTML('afterbegin', displayDataDP3);
 
         // ============ Display Default Point 4 ============
         const getDataDP4 = dataWrapMap.list_data[14];
         const displayDataDP4 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP4.key}
-          <p>Positive Cases : ${getDataDP4.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP4.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP4.key}</p>
         `;
         document.querySelector('#iMD4').insertAdjacentHTML('afterbegin', displayDataDP4);
 
         // ============ Display Default Point 5 ============
         const getDataDP5 = dataWrapMap.list_data[6];
         const displayDataDP5 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP5.key}
-          <p>Positive Cases : ${getDataDP5.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP5.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP5.key}</p>
         `;
         document.querySelector('#iMD5').insertAdjacentHTML('afterbegin', displayDataDP5);
 
         // ============ Display Default Point 6 ============
         const getDataDP6 = dataWrapMap.list_data[0];
         const displayDataDP6 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP6.key}
-          <p>Positive Cases : ${getDataDP6.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP6.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP6.key}</p>
         `;
         document.querySelector('#iMD6').insertAdjacentHTML('afterbegin', displayDataDP6);
 
         // ============ Display Default Point 7 ============
         const getDataDP7 = dataWrapMap.list_data[1];
         const displayDataDP7 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP7.key}
-          <p>Positive Cases : ${getDataDP7.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP7.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP7.key}</p>
         `;
         document.querySelector('#iMD7').insertAdjacentHTML('afterbegin', displayDataDP7);
 
         // ============ Display Default Point 8 ============
         const getDataDP8 = dataWrapMap.list_data[2];
         const displayDataDP8 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP8.key}
-          <p>Positive Cases : ${getDataDP8.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP8.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP8.key}<p>
         `;
         document.querySelector('#iMD8').insertAdjacentHTML('afterbegin', displayDataDP8);
 
         // ============ Display Default Point 9 ============
         const getDataDP9 = dataWrapMap.list_data[3];
         const displayDataDP9 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP9.key}
-          <p>Positive Cases : ${getDataDP9.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP9.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP9.key}</p>
         `;
         document.querySelector('#iMD9').insertAdjacentHTML('afterbegin', displayDataDP9);
 
         // ============ Display Default Point 10 ============
         const getDataDP10 = dataWrapMap.list_data[5];
         const displayDataDP10 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP10.key}
-          <p>Positive Cases : ${getDataDP10.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP10.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP10.key}</p>
         `;
         document.querySelector('#iMD10').insertAdjacentHTML('afterbegin', displayDataDP10);
 
         // ============ Display Default Point 11 ============
         const getDataDP11 = dataWrapMap.list_data[8];
         const displayDataDP11 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP11.key}
-          <p>Positive Cases : ${getDataDP11.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP11.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP11.key}</p>
         `;
         document.querySelector('#iMD11').insertAdjacentHTML('afterbegin', displayDataDP11);
 
         // ============ Display Default Point 12 ============
         const getDataDP12 = dataWrapMap.list_data[26];
         const displayDataDP12 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP12.key}
-          <p>Positive Cases : ${getDataDP12.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP12.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP12.key}</p>
         `;
         document.querySelector('#iMD12').insertAdjacentHTML('afterbegin', displayDataDP12);
 
         // ============ Display Default Point 13 ============
         const getDataDP13 = dataWrapMap.list_data[26];
         const displayDataDP13 = `
-          <span class="covPercent">XX,X%</span>
-          <span class="covDesc">of Indonesia’s Population</span>
-          <p>Province : ${getDataDP13.key}
-          <p>Positive Cases : ${getDataDP13.jumlah_kasus}</p>
-          <p>Vaccinated : XXX,XXX</p>
+          <span class="covPercent">${getDataDP13.jumlah_kasus}</span>
+          <span class="covDesc">Positive<br> Cases</span>
+          <p>Province : ${getDataDP13.key}</p>
         `;
         document.querySelector('#iMD13').insertAdjacentHTML('afterbegin', displayDataDP13);
 

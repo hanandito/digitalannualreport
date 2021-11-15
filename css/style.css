@@ -596,7 +596,7 @@ p,a{
         position: absolute;
         bottom: 80px;
         left: -70px;
-        width: 285px;
+        width: 290px;
         pointer-events: none;
         background: transparent;
         box-shadow: unset;
@@ -626,7 +626,7 @@ p,a{
     .third-section .map-point .tooltip .tooltip-item .tooltip-content .tooltip-text .covPercent{
         display: inline-block;
         margin-bottom: 8px;
-        width: 155px;
+        width: 163px;
         font-family: "Cirka Light";
         font-size: 53.33333333333333px;
         line-height : 50px;
