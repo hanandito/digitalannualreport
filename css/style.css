@@ -206,8 +206,9 @@ p,a{
     color: #000;
 }
 .fifth-section{
-    background-image: url(../images/fifth-section-05.jpg);
+    background-image: url(../images/fifth-section-05-01.jpg);
     background-size: cover;
+    background-position: bottom;
 }
 .fifth-section .first-content{
     padding-top: 150px;
@@ -218,14 +219,14 @@ p,a{
     position: absolute;
 }
 .fifth-section .left-content{
-    top: 68%;
+    top: 58%;
 }
 .fifth-section .right-content{
     top: 54%;
     right: 0;
 }
 .fifth-section .second-content{
-    height: 125vh;
+    height: 75vh;
     position: relative;
 }
 .fifth-section .second-content .wrap-details{
@@ -646,7 +647,6 @@ p,a{
         color: #58595b;
     }
 /* Fifth Section */
-    .fifth-section{background-image: url(../images/fifth-section-05-01.jpg);}
     .fifth-section .second-content .wrap-details{bottom: 35%;}
 /* Seventh Section */
     .seventh-section .num{
