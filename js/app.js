@@ -20,7 +20,7 @@
 //  Carousel
 
 $('.carousel-most').addClass('owl-carousel owl-theme').owlCarousel({
-  navText: ["<span><i class='fas fa-chevron-left'></i></span>","<span><i class='fas fa-chevron-right'></i></span>"],
+  navText: ["<span><i class='fal fa-chevron-left'></i></span>","<span><i class='fal fa-chevron-right'></i></span>"],
   responsive:{
    0: {
     items: 1,
