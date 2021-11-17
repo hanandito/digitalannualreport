@@ -625,7 +625,7 @@ p,a{
     .third-section .map-point .tooltip .tooltip-item .tooltip-content .tooltip-text .covPercent{
         display: inline-block;
         margin-bottom: 8px;
-        width: 163px;
+        width: 168px;
         font-family: "Cirka Light";
         font-size: 53.33333333333333px;
         line-height : 50px;
@@ -661,6 +661,10 @@ p,a{
         font-size: 13.333333333333332px;
         border-radius: 50%;
         background-color: #00adee;
+    }
+    .seventh-section .content-vaccines{
+        height: 400px;
+        position: relative;
     }
     .seventh-section .bottle{
         position: absolute;
