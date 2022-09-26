@@ -534,7 +534,7 @@ $('.carousel-most').addClass('owl-carousel owl-theme').owlCarousel({
   async function fetchDataPD() {
     const xs = [];
     const ys = [];
-    const response = await fetch('https://api.tradingeconomics.com/historical/country/indonesia/indicator/gdp?c=guest:guest&format=json');
+    const response = await fetch('https://pass-prox.herokuapp.com/https://api.tradingeconomics.com/historical/country/indonesia/indicator/gdp?c=guest:guest&format=json');
     const data = await response.json();
     data.forEach(row => {
       const columns = row.DateTime;
